@@ -1,0 +1,1050 @@
+html{
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header {
+    position: sticky;
+    top:0;
+}
+/* Caja de Informacion Primaria Start */
+#info-box {
+    margin: 0;
+    padding: 1rem;
+    width: auto;
+    background-color: #FFCC50;
+    display: flex;
+    justify-content: space-between;
+}
+#info-box p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/* Caja de Informacion Primaria End */
+
+/* Barra Navegadora Start */
+
+#menu {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+        0px 2.8px 5.3px rgba(0, 0, 0, 0.028),
+        0px 9.4px 17.9px rgba(0, 0, 0, 0.033),
+        0px 42px 80px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+}
+#menu a img {
+    width: 10rem;
+    height: auto;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#menu ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem; 
+    text-transform: uppercase;
+
+}
+#menu ul ul {
+    display: none; 
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* Barra Navegadora End */
+
+/* Footer Start */
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: #424242;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    /* Formulario Newsletter Start */
+#form-box {
+    margin: 0;
+    padding: 0;
+    width: 140rem;
+    height: auto;
+    border-bottom: solid 0.1rem #616161;
+    display: flex;
+    justify-content: center;
+}
+#form-box form {
+    margin: 0rem;
+    padding: 2rem;
+    
+}
+#form-box form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    color: #FFCC50;
+
+}
+#form-box form h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color:#fff;
+}
+#form-box form h2 , h3 {
+    text-align: center;
+}
+#form-box form input {
+    margin: 1rem;
+    padding: 1rem 3rem 1rem 0.7rem;
+    width: auto;
+    border: none;
+
+}
+#email {
+    width: 25rem;
+    
+}
+.submit {
+    background-color: #FFCC50;
+    border: none;
+    padding: 1rem 3rem;
+}
+    /* Formulario Newsletter End */
+    /* Nav Footer Contenedor de Contenedores & Copyright Start */
+#nav-footer {
+    margin: 2rem 0;
+    padding: 0;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav-footer h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFCC50;
+    font-size: 1.5rem;
+}
+#nav-footer li a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 3rem;
+}
+#nav-footer .box-nav-foot {
+    margin: 2rem;
+    padding: 1rem;
+    width: auto;
+}
+#nav-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav-footer a {
+    text-decoration: none;
+} 
+
+#icons-redes {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#icons-redes i {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+}
+.logo-footer img {
+    margin: 0;
+    padding: 0;
+    width: 25rem;
+    height: auto;
+}
+#contactos-footer {
+    display: flex;
+    flex-direction: column;
+}
+#contactos-footer a {
+    color: #fff;
+
+}
+#contactos-footer a i {
+    color: #FFCC50;
+    font-size: 1.5rem;
+}
+#contactos-footer a span {
+    margin: 0 0 0 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+#copyright p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+    /* Nav Footer Contenedor | Contenedores | Copyright End */
+
+/* Footer End */
+
+/* HOME O INICIO START */
+section img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 600px;
+} 
+    /* Lo mas visitado Start*/
+section .first-box {
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .first-box h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+section .first-box .fb-contenedor {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section .first-box .fb-contenedor div{
+    width: 35rem;
+    height: 30rem;
+    margin: 0;
+    padding: 0;
+}
+section .first-box .fb-contenedor div img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+    /* Escapada de fin de semana Start */
+section .second-box {
+    width: 100%;
+    height: 50rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .second-box h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+section .second-box h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+section .second-box .sb-contenedor {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section .second-box .sb-contenedor div{
+    width: 35rem;
+    height: 30rem;
+    margin: 0;
+    padding: 0;
+}
+section .second-box .sb-contenedor div img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+    /* Opinione Caja Start */
+section #box-opiniones {
+    width: 100%;
+    height: auto;
+    background-color: #FFCC50;
+    margin: 0;
+    padding: 1rem 0 0 0;
+
+}
+section #box-opiniones h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #424242;
+}
+section #box-opiniones h4 {
+    font-size: 1.3rem;
+    color: #000000;
+    margin: 0;
+    
+}
+section #box-opiniones .bo-caja {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text {
+    width: auto;
+    height: auto;
+    margin: 0 5rem;
+}
+section #box-opiniones .bo-caja  div {
+    width: 20rem;
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+section #box-opiniones .bo-caja img {
+    width: 5rem;
+    height: auto;
+
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 div:first-child img {
+    width: 6rem;
+    height: auto;
+    border-radius: 100%;
+    align-self: flex-end;
+
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text {
+    margin: 1.5rem 0 0 0;
+    width: 60rem;
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0;
+
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text h4 {
+    margin: 0.5rem 0 0 0;
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text h5 {
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    color: #424242;
+    font-size: 1rem;
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 div:last-child img {
+    width: 20rem;
+    height: 25rem;
+    
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 div:last-child p {
+    width: 10rem;
+    height: auto;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 ;
+    z-index: 0;
+    color: #000;
+
+}
+section #box-opiniones .bo-caja .bo-contenedor-x3 div:last-child p:last-child {
+    width: auto;
+    height: auto;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: -1.2rem 0 0 8rem;
+    color:#000;
+}
+
+
+    /* Logos de Socios Start 5!!! */
+#caja-logos-socios {
+    background-color: #2b2a2ad9;
+    width: auto;
+    margin: 0;
+    padding: 2rem 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caja-logos-socios h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color:#ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#caja-logos-socios #logos-socios {
+    flex-wrap: nowrap; 
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    text-align: center;
+
+}
+#caja-logos-socios img {
+    width: 15rem;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+
+} 
+    /* Logos de Socios End */
+/* HOME O INICIO END */
+/* TOURS EN AUTOBÚS ESTILO START*/
+#tea-fondo-imagen {
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(rgba(54, 58, 64, 0.484), rgba(57, 57, 57, 0.5)), url("https://images.unsplash.com/photo-1582058386649-1fae015d431f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section #tea-fondo-imagen  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; 
+    color: #fff;
+}
+    /* Los mejores tours en autobús desde Argentina | Start */
+section .tea-first-box {
+    width: 100%;
+    height: 50rem;
+}
+/* section .tea-first-box h2 {} IGNORAR!  */
+/* Para todo el sitio */
+section h2 { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;     
+    text-align: center;
+    text-transform: uppercase;
+}
+section .tea-first-box div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+section .tea-first-box div img {
+    width: 65rem;
+    height: 40rem;
+    margin: 0;
+    padding: 0;
+}
+section .tea-first-box div p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 0 4rem;
+    padding: 0;
+    width: 50rem;
+}
+        /* Los mejores tours en autobús desde Argentina | End */
+section #tea-tours-mendoza-all {
+    width: 100%;
+    height: 55rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* !!!!!!!!!!!!!!!!!! */
+}
+section #tea-tours-mendoza-all .tea-caja-sombra {
+    width: 30rem;
+    height: 49rem;
+    margin: 1rem 3rem;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
+    6px 6px 80px rgba(0, 0, 0, 0.15);
+    
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-img {
+    margin: 0;
+    padding: 0;
+    width: 30rem;
+    height: 25rem;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-img img {
+    width: 30rem;
+    height: 25rem;
+    margin: 0;
+    padding: 0;
+    
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-precio {
+    width: 100%;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-precio p {
+    margin: 0;
+    padding: 0;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform:capitalize;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto {
+    margin: 1rem 1.5rem;
+    padding: 0;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto h3 {
+    margin: 1.5rem 0 1rem;
+    padding: 0;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto .tea-cs-dias {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #FFCC50;
+    font-weight: 700;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+section #tea-tours-mendoza-all .tea-caja-sombra input {
+    width: 15rem;
+    background-color: #000000;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.6rem;
+
+}
+
+/* TOURS EN AUTOBÚS ESTILO END */
+
+/* PACK FRIENDS ESTILO START */
+#pf-fondo-imagen {
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(rgba(54, 58, 64, 0.484), rgba(57, 57, 57, 0.5)), url("https://images.unsplash.com/photo-1495837174058-628aafc7d610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section #pf-fondo-imagen  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; 
+    color: #fff;
+}
+section .pf-fb-box-p {
+    width: 100%;
+    height: auto; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .pf-fb-box-p p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0rem 10rem 2rem;
+
+}
+    /* Contenedor de viajes Start */
+section #pf-viajes-contenedor {
+    width: 100%;
+    height: 55rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+section #pf-viajes-contenedor .pf-caja-sombra {
+    width: 30rem;
+    height: 49rem;
+    margin: 1rem 3rem;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
+    6px 6px 80px rgba(0, 0, 0, 0.15);
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-img {
+    margin: 0;
+    padding: 0;
+    width: 30rem;
+    height: 25rem;
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-img img {
+    width: 30rem;
+    height: 25rem;
+    margin: 0;
+    padding: 0;
+    
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-precio {
+    width: 100%;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-precio p {
+    margin: 0;
+    padding: 0;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform:capitalize;
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto {
+    margin: 1rem 1.5rem;
+    padding: 0;
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto h3 {
+    margin: 1.5rem 0 1rem;
+    padding: 0;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto .pf-cs-dias {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #FFCC50;
+    font-weight: 700;
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+section #pf-viajes-contenedor .pf-caja-sombra input {
+    width: 15rem;
+    background-color: #000000;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.6rem;
+
+}
+/* PACK FRIENDS ESTILO END */
+
+/* CONOCE ARGENTINA START */
+section #ca-imagen-fondo {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://cdn.pixabay.com/photo/2016/11/29/09/49/woman-1868817_960_720.jpg");
+    background-size: cover;
+    background-position: 100% 34%; 
+    /* Nota: nueva manera de posicionar una imagen */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #ca-imagen-fondo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; 
+    color: #fff;
+}
+section .ca-box-text-p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .ca-box-text-p p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.8;
+    padding: 0rem 10rem;
+    
+}
+/* Cajas contenedoras de viajes en Conoce Argentina */
+section #ca-viajes-contenedor {
+    width: 100%;
+    height: 55rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+section #ca-viajes-contenedor .ca-caja-sombra {
+    width: 30rem;
+    height: 49rem;
+    margin: 1rem 3rem;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
+    6px 6px 80px rgba(0, 0, 0, 0.15);
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-img {
+    margin: 0;
+    padding: 0;
+    width: 30rem;
+    height: 25rem;
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-img img {
+    width: 30rem;
+    height: 25rem;
+    margin: 0;
+    padding: 0;
+    
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-precio {
+    width: 100%;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-precio p {
+    margin: 0;
+    padding: 0;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform:capitalize;
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto {
+    margin: 1rem 1.5rem;
+    padding: 0;
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto h3 {
+    margin: 1.5rem 0 1rem;
+    padding: 0;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto .ca-cs-dias {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #FFCC50;
+    font-weight: 700;
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+section #ca-viajes-contenedor .ca-caja-sombra input {
+    width: 15rem;
+    background-color: #000000;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.6rem;
+
+}
+
+/* CONOCE ARGENTINA END */
+
+/* CONTACTANOS START */
+section #contactanos-imagen-fondo {
+    width: 100%;
+    height: 15rem;
+    background-image:  linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://images.unsplash.com/photo-1601933513556-7926c45d1c49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section #contactanos-imagen-fondo  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; 
+    color: #fff;
+}
+section #contactanos-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+/* Primera y Segunda columna */
+section #contactanos-contenedor .contactanos-c-form , .contactanos-c-nos {
+
+    margin: 2rem 0;
+    padding: 0;
+    width: 45rem;
+    height: auto; 
+
+}
+section #contactanos-contenedor .contactanos-c-form form {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+section #contactanos-contenedor .contactanos-c-form form div {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+section #contactanos-contenedor .contactanos-c-form form div label {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+
+}
+section #contactanos-contenedor .contactanos-c-form form div input, select{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    width: auto;
+    height: 2rem;
+
+}
+section #contactanos-contenedor .contactanos-c-form form div textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    width: auto;
+    height: 15rem;
+    resize: none;
+}
+
+section #contactanos-contenedor .contactanos-c-form form .box-checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+section #contactanos-contenedor .contactanos-c-form form .box-checkbox input {
+    width: auto;
+    height: auto;
+}
+section #contactanos-contenedor .contactanos-c-form form #submit {
+    margin: 2rem 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #000000;
+    color: #FFCC50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+section iframe {
+    width: 100%;
+    height: 40rem;
+}
+/* Segunda Columna de Contactanos */
+section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+
+}
+
+section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 img {
+    width: 8rem;
+    height: auto;
+    margin: 0 0 0 -2rem;
+    padding: 0;
+}
+section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 h2 {
+    text-transform: capitalize;
+    margin: auto 0;
+}
+
+section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos {
+    width: 100%;
+    height: auto;
+    margin: 0;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos h2{
+    text-transform: none;
+    font-size: 1.7rem;
+}
+
+section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons a i {
+    color: #FFCC50;
+    font-size: 1.4rem;
+
+}
+section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons a span {
+    margin: 0 0 0 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+}
+
+section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes a {
+    text-decoration: none;
+}
+
+section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
+    color: #424242;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+
+/* CONTACTANOS END */
