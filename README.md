@@ -1,6 +1,6 @@
 # Next-Travel-Proyecto
 Proyecto a presentar en Coderhouse
-Hola mi Romina Galarza y soy estudiante en Coderhouse. 
+Hola mi nombre es Romina Galarza y soy estudiante en Coderhouse. 
 Este es mi proyecyo, una agencia de viajes.
 Este es el link mi html en github:
 
