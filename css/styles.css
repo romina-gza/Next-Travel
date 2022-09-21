@@ -9,6 +9,7 @@ body {
 header {
     position: sticky;
     top:0;
+    z-index: 10;
 }
 /* Caja de Informacion Primaria Start */
 #info-box {
@@ -70,7 +71,31 @@ a {
     color: rgb(0, 0, 0);
 }
 /* Barra Navegadora End */
-
+    /* MQ Para celular */
+    @media screen and (max-width: 320px){
+        body {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: 
+             "burguer"
+             "table";        
+            grid-gap: 1fr;
+            overflow-x: hidden;
+            background-color: yellowgreen;
+        }
+        header {
+            grid-area: burguer;
+            width: 90rem;
+            height: 15rem;
+            background-color: yellow;
+        }
+        footer {
+            grid-area: table;
+        }
+    /* MQ para PC */
+   
 /* Footer Start */
 footer {
     margin: 0;
@@ -97,7 +122,7 @@ footer {
     
 }
 #form-box form h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: x-large;
     color: #FFCC50;
 
@@ -111,10 +136,11 @@ footer {
 #form-box form h2 , h3 {
     text-align: center;
 }
-#form-box form input {
-    margin: 1rem;
-    padding: 1rem 3rem 1rem 0.7rem;
-    width: auto;
+#form-box form input:not(:last-of-type) {
+    margin: 1rem 0.5rem;
+    padding: 0 0 0 0.7rem;
+    width: 25rem;
+    height: 3.5rem;
     border: none;
 
 }
@@ -122,10 +148,16 @@ footer {
     width: 25rem;
     
 }
-.submit {
+#submit {
+    width: 15rem;
+    height: 3.5rem;
     background-color: #FFCC50;
     border: none;
-    padding: 1rem 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    margin: 1rem 0.5rem;
+
 }
     /* Formulario Newsletter End */
     /* Nav Footer Contenedor de Contenedores & Copyright Start */
@@ -255,9 +287,7 @@ section .first-box .fb-contenedor div img {
     padding: 0;
     width: 100%;
     height: 100%;
-
 }
-
     /* Escapada de fin de semana Start */
 section .second-box {
     width: 100%;
@@ -302,7 +332,7 @@ section .second-box .sb-contenedor div img {
     height: 100%;
 
 }
-    /* Opinione Caja Start */
+    /* Opinione Caja Start Usando GRID*/
 section #box-opiniones {
     width: 100%;
     height: auto;
@@ -316,100 +346,83 @@ section #box-opiniones h3, h4 {
     font-size: 1.5rem;
     color: #424242;
 }
-section #box-opiniones h4 {
-    font-size: 1.3rem;
-    color: #000000;
-    margin: 0;
-    
-}
 section #box-opiniones .bo-caja {
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-}
-section #box-opiniones .bo-caja .bo-contenedor-x3 {
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
+    width: 60%;
+    height: 40rem;
+    margin: 0 auto;
     
 }
-section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text {
-    width: auto;
-    height: auto;
-    margin: 0 5rem;
+.bo-contenedor-x3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "perfil comentario imagen"
+        ". comentario imagen";
 }
-section #box-opiniones .bo-caja  div {
-    width: 20rem;
-    height: auto;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-
-}
-section #box-opiniones .bo-caja img {
-    width: 5rem;
-    height: auto;
-
-}
-section #box-opiniones .bo-caja .bo-contenedor-x3 div:first-child img {
-    width: 6rem;
-    height: auto;
-    border-radius: 100%;
-    align-self: flex-end;
-
-}
-section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text {
-    margin: 1.5rem 0 0 0;
-    width: 60rem;
-}
-section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text p {
-    font-family: 'Roboto',sans-serif;
+#box-opiniones .bo-caja h3 {
     font-size: 1.3rem;
+    color: #4b4b4b;
+    text-align: center;
+}
+.bo-perfil {
+    grid-area: perfil;
+    width: auto;
+    margin: 0;
+    justify-self: end;
+}
+.bo-perfil img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 0;
+    
+}
+.bo-cx3-text {
+    grid-area: comentario;
+    margin: 0 3rem;
+    width: 50rem;
+}
+.bo-cx3-text p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.4rem;
     line-height: 1.5;
     margin: 0;
-
 }
-section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text h4 {
+.bo-contenedor-x3 .bo-cx3-text h4 {
     margin: 0.5rem 0 0 0;
 }
-section #box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text h5 {
+.bo-contenedor-x3 .bo-cx3-text h5 {
     margin: 0;
     font-family: 'Roboto',sans-serif;
     color: #424242;
     font-size: 1rem;
 }
-section #box-opiniones .bo-caja .bo-contenedor-x3 div:last-child img {
-    width: 20rem;
-    height: 25rem;
-    
+.bo-contenedor-x3 .bo-cx3-img-txt {
+    grid-area: imagen;
+    transform: rotate(4deg);
+    margin: 0;
 }
-section #box-opiniones .bo-caja .bo-contenedor-x3 div:last-child p {
-    width: 10rem;
-    height: auto;
+.bo-contenedor-x3 .bo-cx3-img-txt p:first-of-type {
+    margin: -3.5rem 0 1rem 0 ;
     font-family: 'Roboto',sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 0 ;
-    z-index: 0;
-    color: #000;
-
+    transform: rotate(-3.5deg);
 }
-section #box-opiniones .bo-caja .bo-contenedor-x3 div:last-child p:last-child {
-    width: auto;
-    height: auto;
+.bo-contenedor-x3 .bo-cx3-img-txt p:last-of-type {
+    margin: -3.5rem 0 0 8rem ;
     font-family: 'Roboto',sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin: -1.2rem 0 0 8rem;
-    color:#000;
+}
+.bo-contenedor-x3 .bo-cx3-img-txt img {
+    width: 23rem;
+    height: 30rem;
+    border: 0.9rem solid #fff;
 }
 
-
-    /* Logos de Socios Start 5!!! */
+    /* Logos de Socios Start */
 #caja-logos-socios {
     background-color: #2b2a2ad9;
     width: auto;
@@ -1046,5 +1059,127 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
     padding: 0;
 }
 
-
 /* CONTACTANOS END */
+
+/* Start Pagina Nosotros */
+#nosotros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem 30rem repeat(2, 1fr);
+    grid-template-areas: 
+        "fondo fondo fondo fondo"
+        "eligenos eligenos eligenos eligenos"
+        "historia historia equipo equipo"
+        "historia historia equipo equipo";
+}
+#n-img-fondo {
+    grid-area: fondo;
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(rgba(54, 58, 64, 0.484), rgba(43, 43, 43, 0.5)), url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#n-img-fondo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; 
+    color: #fff;
+}
+#n-eligenos {
+    grid-area: eligenos;
+    width: 100%;
+    height: 30rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#n-eligenos div {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2.5rem;
+    box-shadow: 
+        0px 0px 10px rgba(0, 0, 0, 0.037),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#n-eligenos div i {
+    font-size: 5rem;
+    margin: 1rem;
+    color:#FFCC50;
+}
+#n-eligenos div h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+
+}
+#n-eligenos div p {
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Monserrat',sans-serif;
+    font-size: 1.5rem;
+}
+#n-equipo {
+    grid-area: equipo;
+}
+#nosotros #n-equipo .caja {
+    width: 45rem;
+    height: 25rem;
+    margin: 4rem auto;
+    background-color: rgb(224, 224, 225);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+}
+#nosotros #n-equipo .caja:first-of-type {
+    margin: 2.5rem auto;
+}
+#nosotros #n-equipo .caja img {
+    grid-column: 1 / 2;
+    width: 20rem;
+    height: auto; 
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+#nosotros #n-equipo .caja div {
+    width: auto;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+}
+#nosotros #n-equipo .caja div h3, p {
+    grid-column: 2/ 3;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem 0;
+}
+#n-historia {
+    grid-area: historia;
+    width: 70rem;
+    height: auto;
+    margin: 0 5rem;
+
+}
+#n-historia p {
+    margin: 1.5rem 5rem;
+    padding: 0 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
