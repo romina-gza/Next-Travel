@@ -72,29 +72,7 @@ a {
 }
 /* Barra Navegadora End */
     /* MQ Para celular */
-    @media screen and (max-width: 320px){
-        body {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-areas: 
-             "burguer"
-             "table";        
-            grid-gap: 1fr;
-            overflow-x: hidden;
-            background-color: yellowgreen;
-        }
-        header {
-            grid-area: burguer;
-            width: 90rem;
-            height: 15rem;
-            background-color: yellow;
-        }
-        footer {
-            grid-area: table;
-        }
-    /* MQ para PC */
+    
    
 /* Footer Start */
 footer {
