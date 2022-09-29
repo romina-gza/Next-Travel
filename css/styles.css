@@ -72,7 +72,7 @@ nav .ul-propia li {
 
 /* Barra Navegadora End */
 
-        /* MQ Para celular */
+        /* MQ Para iPHONE */
         @media (min-width: 320px) and (max-width: 576px) {
             
             .ul-propia:last-of-type {
@@ -82,13 +82,15 @@ nav .ul-propia li {
                 background-color: rgb(21, 153, 21);
                 color: white;
             }
-            section .carrusel-propio img {
-                margin: 0;
-                padding: 0;
-                height: 30rem !important;
+            
+             /* aside none no funciona */
+            .caja-logos-socios {
+                display: none;
             }
-            /* aside none no funciona */
-            aside {
+            .caja-logos-socios img {
+                display: none;
+            }
+            .caja-logos-socios h4 {
                 display: none;
             }
 
@@ -111,32 +113,28 @@ nav .ul-propia li {
             
             }
             /* carrusel opiniones */
-            /* .bo-contenedor-x3 {
-                width: 60%;
-                height: 35rem;
+            .bo-contenedor-x3 {
+                width: 80%;
+                height: auto;
                 margin: 3rem auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: 25% 55% 1fr;
                 grid-template-areas: 
-                    "perfil comentario imagen"
-                    ". comentario imagen";
-            } */
-            .bo-perfil {
-                grid-column: 1/4;
-                grid-row: 1/2;
-                order: 1;
+                    ". perfil ."
+                    "comentario comentario comentario"
+                    ". imagen .";
+            }
+            .bo-perfil img {
+                margin: 0 auto;
             }
             .bo-cx3-text {
-                order: 2;
-                grid-column: 1/4;
-                grid-row: 2/4;
+                width: 100% !important;
+                
             }
             .bo-cx3-img-txt {
                 display: none;
             }
-
-
             /* nosotros */
             
             #nosotros #n-eligenos {
@@ -158,12 +156,12 @@ nav .ul-propia li {
 
         }
 
-        /* MQ para Tablets */
+        /* MQ para TABLETS */
         @media (min-width: 577px) and (max-width: 991px) {
 
         }
 
-        /* MQ para PC */
+        /* MQ para DESKTOP */
         @media (min-width: 992px) {
 
             /* Pag. Inicio */
@@ -171,8 +169,30 @@ nav .ul-propia li {
                 display: none;
             }
             /* Web Nosotros */
+            nav div a img:hover {
+                transform: scale(1.1, 1.1);
+            }
 
-
+            section .first-box .fb-contenedor div img:hover,
+            section .second-box .sb-contenedor div img:hover {
+                transform: scale(1.01, 1.01);
+                transition: all 1s;
+            }
+            /* grid carrusel- Opiniones */
+            .bo-contenedor-x3 {
+                width: 60%;
+                height: 35rem;
+                margin: 3rem auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                    "perfil comentario imagen"
+                    ". comentario imagen";
+            }
+            
+            
+            
         }
 
         
@@ -334,8 +354,8 @@ section .carrusel-propio div img {
     margin: 0;
     padding: 0;
     border: 0;
-    width: 100%;
-    height: 80vh;
+    max-height: 80vh;
+    min-height: 60vh;
 } 
     /* Lo mas visitado Start*/
 
@@ -343,7 +363,6 @@ section .first-box {
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
-    background-color: #616161;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,8 +432,11 @@ section .second-box .sb-contenedor {
 section .second-box .sb-contenedor div{
     width: 35rem;
     height: 30rem;
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 0;
+}
+section .second-box .sb-contenedor div:last-of-type {
+    margin-bottom: 2rem;
 }
 section .second-box .sb-contenedor div img {
     margin: 0;
@@ -423,8 +445,8 @@ section .second-box .sb-contenedor div img {
     height: 100%;
 
 }
-    /* Opiniones Caja Start Usando GRID*/
-#box-opiniones {
+    /* Opiniones Caja Start Usando GRID en MQ desktop*/
+.box-opiniones {
     width: 100%;
     height: auto;
     background-color: #FFCC50;
@@ -432,32 +454,22 @@ section .second-box .sb-contenedor div img {
     padding: 1rem 0 0 0;
 
 }
-#box-opiniones h3, h4 {
+.box-opiniones h3, h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #424242;
 }
+
+
 .bo-caja {
     width: 60%;
-    height: 40rem;
+    height: auto;
     margin: 0;
 }
-.bo-contenedor-x3 {
-    width: 60%;
-    height: 35rem;
-    margin: 3rem auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "perfil comentario imagen"
-        ". comentario imagen";
-}
-
 .bo-perfil {
     grid-area: perfil;
-    width: auto;
+    width: 100%;
     margin: 0;
     justify-self: end;
 }
@@ -511,9 +523,8 @@ section .second-box .sb-contenedor div img {
     height: 30rem;
     border: 0.9rem solid #fff;
 }
-
     /* Logos de Socios Start */
-#caja-logos-socios {
+.caja-logos-socios {
     background-color: #2b2a2ad9;
     width: auto;
     margin: 0;
@@ -524,7 +535,7 @@ section .second-box .sb-contenedor div img {
     align-items: center;
 }
 
-#caja-logos-socios h4 {
+.caja-logos-socios h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     color:#ffffff;
@@ -532,7 +543,7 @@ section .second-box .sb-contenedor div img {
     padding: 0;
     text-align: center;
 }
-#caja-logos-socios #logos-socios {
+.caja-logos-socios .logos-socios {
     flex-wrap: nowrap; 
     margin: 0;
     padding: 0;
@@ -540,7 +551,7 @@ section .second-box .sb-contenedor div img {
     text-align: center;
 
 }
-#caja-logos-socios img {
+.caja-logos-socios img {
     width: 15rem;
     height: auto;
     margin: 1rem;
