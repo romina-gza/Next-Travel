@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Travel</title>
+
+    <!-- Estilo CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <!-- Mi estilo personalizado -->
     <link rel="stylesheet" href="./css/styles.css">
+    
     <!-- Tipografia Google Fonts Start -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
     <!--  Font Awesome Start -->
     <script src="https://kit.fontawesome.com/a5e24d0a3e.js" crossorigin="anonymous"></script>
 
@@ -27,68 +34,85 @@
                 <p>Sobre Nosotros</p>
             </a>
         </div>
-        <nav id="menu">
-            <a href="#">
-                <img src="./assets/img/logo.png" alt="Logo Next Travel">
-            </a>
-            <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="./paginas/tourenautobus.html">Tour en Autobus</a>
-                </li>
-                <li>
-                    <a href="./paginas/packfriends.html">Pack Friends</a>
-                </li> 
-                    <ul>
-                        <li>Cumpleaños</li>
-                            <ul>
-                                <li>Pinamar</li>
-                                <li>Monte Hermoso</li>
-                                <li>Bariloche</li>
-                            </ul>
-                        <li>Egresados</li>
-                        <ul>
-                            <li>Mar del Plata</li>
-                            <li>Bariloche</li>
-                            <li>Punta Rasa</li>
-                            <li>Las Grutas</li>
-                        </ul>
+        <!-- Nav Bootstrap  -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="Logo Next Travel">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-propia">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/tourenautobus.html">Tour en Autobús</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/packfriends.html">Pack Friends</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/conoceargentina.html">Conoce Argentina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/contactanos.html">Contactanos</a>
+                        </li>
                     </ul>
-                <li>
-                    <a href="./paginas/conoceargentina.html">Conoce Argentina</a>
-                </li>
-                    <ul>
-                        <li>Mendoza</li>
-                        <li>San Juan</li>
-                        <li>Córdoba</li>
-                        <li>Entre Rios</li>
-                        <li>Misiones</li>
-                        <li>Corrientes</li>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-propia">
+                        <li class="nav-item">
+                            <img src="./assets/img/lang-es.png" alt="lenguage Español"> ESP
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/img/lang-en.png" alt="lenguage Inglés"> ENG
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/img/lang-por.png" alt="lenguage Inglés"> POR
+                        </li>
                     </ul>
-                <li>
-                    <a href="./paginas/contactanos.html">Contactanos</a>
-                </li>    
-            </ul>
-            <ul>
-                <li>
-                    <img src="./assets/img/lang-es.png" alt="lenguage Español"> ESP
-                </li>
-                <li>
-                    <img src="./assets/img/lang-en.png" alt="lenguage Inglés"> ENG
-                </li>
-                <li>
-                    <img src="./assets/img/lang-por.png" alt="lenguage Inglés"> POR
-                </li>
-            </ul>
+                <!-- recordar! btn-movil clase personal -->
+                        <button class="btn btn-success btn-movil" type="submit">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Solicitar cotización
+                        </button>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <section>
         <!-- Carousel Bootstrap Start -->
-<img src="./assets/img/carousel.png" alt="Aquí va un carrusel"> 
-        <!-- Carousel Bootstrap End -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carrusel-propio">
+                <div class="carousel-item active">
+                <img src="./assets/img/carrusel-img-1.jpg" class="d-block w-100" alt="paisajes de Mendoza">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/carrusel-img-2.jpg" class="d-block w-100" alt="paisajes de Mendoza">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/carrusel-img-3.jpg" class="d-block w-100" alt="paisajes de Mendoza">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="grid-content">
         <!-- Lo más visitado Start -->
         <div class="first-box">
             <h2>Lo más visitado</h2>
@@ -104,8 +128,8 @@
                 </div>
             </div>
         </div> 
-        <!-- Lo más visitado End -->
-        <!-- Caja escapada de findesemana Start -->
+
+        <!-- Caja escapada de fin de semana Start -->
         <div class="second-box">
             <h2>¿Escapada de fin de semana?</h2>
             <h3>Disfruta de Mendoza</h3>
@@ -121,26 +145,89 @@
                 </div>
             </div>
         </div> 
+    </section>
 
+    <section>
         <!-- Opiniones Caja Start -->
         <div id="box-opiniones">
             <h2>Opiniones de Next Travel</h2>
-            <div class="bo-caja">
-                <h3>Las Leñas, Malargüe Mendoza</h3>
-                <div class="bo-contenedor-x3">
-                    <div class="bo-perfil">
-                        <img src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="Imagen de perfil, mujer.">
+
+            <!-- Carrusel de Opiniones -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- caja de opinion personalizada 1 unidad -->
+                        <div class="bo-caja d-block w-100">
+                                <h3>Las Leñas, Malargüe Mendoza</h3>
+                                <div class="bo-contenedor-x3">
+                                    <div class="bo-perfil">
+                                        <img src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="Imagen de perfil, mujer.">
+                                    </div>
+                                    <div class="bo-cx3-text">
+                                        <p>El mejor viaje de cumpleaños de mi vida! El equipo next travel fue muy atento y manejó con mucha precaución en todo el camino. Los Molles hasta Las Leñas un paisaje hermoso!!! con nieve casi todo el trayecto pero con la cordillera de los Andes tan majestuosa, para los principantes esta el culipatín tan divertido como esquiar. muy buena tención en las cafeterias y los instructores del valle son muy amables, un paseo digno de repetirse.</p>
+                                        <h4>Celeste Natel</h4>
+                                        <h5>Publicado el 08/04/22</h5>
+                                    </div>
+                                    <div class="bo-cx3-img-txt">
+                                        <p>Mi foto en...</p>
+                                        <img src="https://images.unsplash.com/photo-1609952769788-d9f867f798c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Mujer esquiando">
+                                        <p>Las Leñas, Mendoza</p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <div class="bo-cx3-text">
-                        <p>El mejor viaje de cumpleaños de mi vida! El equipo next travel fue muy atento y manejó con mucha precaución en todo el camino. Los Molles hasta Las Leñas un paisaje hermoso!!! con nieve casi todo el trayecto pero con la cordillera de los Andes tan majestuosa, para los principantes esta el culipatín tan divertido como esquiar. muy buena tención en las cafeterias y los instructores del valle son muy amables, un paseo digno de repetirse.</p>
-                        <h4>Celeste Natel</h4>
-                        <h5>Publicado el 08/04/22</h5>
+                    <div class="carousel-item">
+                        <!-- caja de opinion personalizada 1 unidad -->
+                        <div class="bo-caja d-block w-100">
+                                <h3>Las Leñas, Malargüe Mendoza</h3>
+                                <div class="bo-contenedor-x3">
+                                    <div class="bo-perfil">
+                                        <img src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="Imagen de perfil, mujer.">
+                                    </div>
+                                    <div class="bo-cx3-text">
+                                        <p>El mejor viaje de cumpleaños de mi vida! El equipo next travel fue muy atento y manejó con mucha precaución en todo el camino. Los Molles hasta Las Leñas un paisaje hermoso!!! con nieve casi todo el trayecto pero con la cordillera de los Andes tan majestuosa, para los principantes esta el culipatín tan divertido como esquiar. muy buena tención en las cafeterias y los instructores del valle son muy amables, un paseo digno de repetirse.</p>
+                                        <h4>Celeste Natel</h4>
+                                        <h5>Publicado el 08/04/22</h5>
+                                    </div>
+                                    <div class="bo-cx3-img-txt">
+                                        <p>Mi foto en...</p>
+                                        <img src="https://images.unsplash.com/photo-1609952769788-d9f867f798c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Mujer esquiando">
+                                        <p>Las Leñas, Mendoza</p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <div class="bo-cx3-img-txt">
-                        <p>Mi foto en...</p>
-                        <img src="https://images.unsplash.com/photo-1609952769788-d9f867f798c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Mujer esquiando">
-                        <p>Las Leñas, Mendoza</p>
+                    <div class="carousel-item">
+                        <!-- caja de opinion personalizada 1 unidad -->
+                        <div class="bo-caja d-block w-100">
+                                <h3>Las Leñas, Malargüe Mendoza</h3>
+                                <div class="bo-contenedor-x3">
+                                    <div class="bo-perfil">
+                                        <img src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="Imagen de perfil, mujer.">
+                                    </div>
+                                    <div class="bo-cx3-text">
+                                        <p>El mejor viaje de cumpleaños de mi vida! El equipo next travel fue muy atento y manejó con mucha precaución en todo el camino. Los Molles hasta Las Leñas un paisaje hermoso!!! con nieve casi todo el trayecto pero con la cordillera de los Andes tan majestuosa, para los principantes esta el culipatín tan divertido como esquiar. muy buena tención en las cafeterias y los instructores del valle son muy amables, un paseo digno de repetirse.</p>
+                                        <h4>Celeste Natel</h4>
+                                        <h5>Publicado el 08/04/22</h5>
+                                    </div>
+                                    <div class="bo-cx3-img-txt">
+                                        <p>Mi foto en...</p>
+                                        <img src="https://images.unsplash.com/photo-1609952769788-d9f867f798c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Mujer esquiando">
+                                        <p>Las Leñas, Mendoza</p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
                 </div>
             </div>
         </div>
@@ -149,16 +236,16 @@
     <aside id="caja-logos-socios">
         <h4>Algunos de nuestro Socios</h4>
         <div id="logos-socios">
-            <img src="./assets/img/AND_turismo_01-Andesmar-Autotransporte.png" alt="">
-            <img src="./assets/img/arg-cordoba-hoteles.png" alt="">
-            <img src="./assets/img/arg-ghl-libertad.png" alt="">
-            <img src="./assets/img/arg-hoteles.png" alt="">
-            <img src="./assets/img/arg-konke.png" alt="">
-            <img src="./assets/img/arg-patagonia-hoteles.png" alt="">
-            <img src="assets/img/cata-internacional-logo.png">
-            <img src="./assets/img/Logo_PRINCESS-oro-e1630768096321.png">
-            <img src="./assets/img/arg-goldhoteles.png" alt="">
-            <img src="./assets/img/hotel-lamas-600x600.png">
+            <img src="./assets/img/AND_turismo_01-Andesmar-Autotransporte.png" alt="logo">
+            <img src="./assets/img/arg-cordoba-hoteles.png" alt="logo">
+            <img src="./assets/img/arg-ghl-libertad.png" alt="logo">
+            <img src="./assets/img/arg-hoteles.png" alt="logo">
+            <img src="./assets/img/arg-konke.png" alt="logo">
+            <img src="./assets/img/arg-patagonia-hoteles.png" alt="logo">
+            <img src="assets/img/cata-internacional-logo.png" alt="logo">
+            <img src="./assets/img/Logo_PRINCESS-oro-e1630768096321.png" alt="logo">
+            <img src="./assets/img/arg-goldhoteles.png" alt="logo">
+            <img src="./assets/img/hotel-lamas-600x600.png" alt="logo">
         </div>
 
     </aside>
@@ -178,8 +265,10 @@
                 <input id="submit" type="submit" value="Suscribirse"></input>
             </form>
         </div>
-
-    <nav id="nav-footer">
+        
+            <!-- Contenedor segundo de footer -->
+        <div id="contenedor-f2">
+            <!-- caja de logos -->
             <div class="box-nav-foot">
                 <a href="#" class="logo-footer">
                     <img src="./assets/img/logo.png" alt="Logo Next Travel">
@@ -199,6 +288,7 @@
                     </a>
                 </div>        
             </div>
+            <!-- caja de  Mas Info-->
             <div class="box-nav-foot">
                 <h4>Más Información</h4>
                 <ul>
@@ -216,6 +306,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- caja de  Lo Más Visto Footer-->
             <div class="box-nav-foot">
                 <h4>Lo más visto</h4>
                 <ul>
@@ -230,35 +321,38 @@
                     </li>
                     <li><a href="">Bariloche</a></li>
                 </ul>
+            </div>
+            <!-- Contactos footer Start -->
+            <div class="box-nav-foot">
+                <h4>Contactanos</h4>
+                <div id="contactos-footer">
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-phone"></i> 
+                        <span>+54 9 15 12345678901</span>
+                    </a>
+                    <a href="https://wa.me/11123456789?text=Hola,%20quisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+54 9 15 26101234567</span> 
+                    </a>            
+                    <a href="mailto:booknexttravel@gmail.com?body=Hola!%0D%0A%0D%0AQuisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>booknexttravel@gmail.com</span> 
+                    </a>
+                    <a href="https://goo.gl/maps/YrQpbu7Qr2155fqD7" target="_blank">
+                        <i class="fa-solid fa-location-dot">
+                        </i> 
+                        <span>9 de julio 1111, Mendoza Ciudad</span>
+                    </a>
+                </div>             
+            </div>
         </div>
-        <!-- Contactos footer Start -->
-        <div class="box-nav-foot">
-            <h4>Contactanos</h4>
-            <div id="contactos-footer">
-                <a href="#" target="_blank">
-                    <i class="fa-solid fa-phone"></i> 
-                    <span>+54 9 15 12345678901</span>
-                </a>
-                <a href="https://wa.me/11123456789?text=Hola,%20quisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>+54 9 15 26101234567</span> 
-                </a>            
-                <a href="mailto:booknexttravel@gmail.com?body=Hola!%0D%0A%0D%0AQuisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>booknexttravel@gmail.com</span> 
-                </a>
-                <a href="https://goo.gl/maps/YrQpbu7Qr2155fqD7" target="_blank">
-                    <i class="fa-solid fa-location-dot">
-                    </i> 
-                    <span>9 de julio 1111, Mendoza Ciudad</span>
-                </a>
-            </div>             
+
+        <div id="copyright">
+            <p> Copyright © 2022 Next Travel. Todos los derechos reservados. Power by romina-gza</p>
         </div>
-        <!-- Contactos footer End -->
-    </nav>
-    <div id="copyright">
-        <p> Copyright © 2022 Next Travel. Todos los derechos reservados. Power by romina-gza</p>
-    </div>
     </footer>
+    <!-- CDN Bootstrap v5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>

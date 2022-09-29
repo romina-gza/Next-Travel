@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Travel</title>
+
+    <!-- Estilo CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <!-- Mi estilo personalizado -->
     <link rel="stylesheet" href="../css/styles.css">
+
     <!-- Tipografia Google Fonts Start -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
     <!--  Font Awesome Start -->
     <script src="https://kit.fontawesome.com/a5e24d0a3e.js" crossorigin="anonymous"></script>
 
@@ -20,69 +27,60 @@
 <body>
     <header>
         <div id="info-box">
-            <a>
+            <a href="#">
                 <p>Llámanos +549 15 1234567890</p>
             </a>
             <a href="./nosotros.html">
                 <p>Sobre Nosotros</p>
             </a>
         </div>
-        <nav id="menu">
-            <a href="../index.html">
-                <img src="../assets/img/logo.png" alt="Logo Next Travel">
-            </a>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./tourenautobus.html">Tour en Autobus</a>
-                </li>
-                <li>
-                    <a href="./packfriends.html">Pack Friends</a>
-                </li>
-                    <ul>
-                        <li>Cumpleaños</li>
-                            <ul>
-                                <li>Pinamar</li>
-                                <li>Monte Hermoso</li>
-                                <li>Bariloche</li>
-                            </ul>
-                        <li>Egresados</li>
-                        <ul>
-                            <li>Mar del Plata</li>
-                            <li>Bariloche</li>
-                            <li>Punta Rasa</li>
-                            <li>Las Grutas</li>
-                        </ul>
+        <!-- Nav Bootstrap  -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.png" alt="Logo Next Travel">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-propia">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tourenautobus.html">Tour en Autobús</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./packfriends.html">Pack Friends</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conoceargentina.html">Conoce Argentina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
                     </ul>
-                <li>
-                    <a href="./conoceargentina.html">Conoce Argentina</a>
-                </li>
-                    <ul>
-                        <li>Mendoza</li>
-                        <li>San Juan</li>
-                        <li>Córdoba</li>
-                        <li>Entre Rios</li>
-                        <li>Misiones</li>
-                        <li>Corrientes</li>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-propia">
+                        <li class="nav-item">
+                            <img src="../assets/img/lang-es.png" alt="lenguage Español"> ESP
+                        </li>
+                        <li class="nav-item">
+                            <img src="../assets/img/lang-en.png" alt="lenguage Inglés"> ENG
+                        </li>
+                        <li class="nav-item">
+                            <img src="../assets/img/lang-por.png" alt="lenguage Inglés"> POR
+                        </li>
                     </ul>
-                <li>
-                    <a href="#">Contactanos</a>
-                </li>    
-            </ul>
-            <ul>
-                <li>
-                    <img src="../assets/img/lang-es.png" alt="lenguage Español"> ESP
-                </li>
-                <li>
-                    <img src="../assets/img/lang-en.png" alt="lenguage Inglés"> ENG
-                </li>
-                <li>
-                    <img src="../assets/img/lang-por.png" alt="lenguage Inglés"> POR
-                </li>
-            </ul>
+                <!-- Ignorar! btn-movil clase personal -->
+                        <button class="btn btn-outline-success btn-movil" type="submit">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Solicitar cotización
+                        </button>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <section>
@@ -207,9 +205,11 @@
             </form>
         </div>
 
-    <nav id="nav-footer">
+        <!-- Contenedor segundo de footer -->
+        <div id="contenedor-f2">
+            <!-- caja de logos -->
             <div class="box-nav-foot">
-                <a href="../index.html" class="logo-footer">
+                <a href="#" class="logo-footer">
                     <img src="../assets/img/logo.png" alt="Logo Next Travel">
                 </a>
                 <div id="icons-redes">    
@@ -227,23 +227,25 @@
                     </a>
                 </div>        
             </div>
+            <!-- caja de  Mas Info-->
             <div class="box-nav-foot">
                 <h4>Más Información</h4>
                 <ul>
                     <li>
-                        <a href="">Quiénes Somos</a>
+                        <a href="#">Quiénes Somos</a>
                     </li>
                     <li>
-                        <a href="">Términos y Políticas</a>
+                        <a href="#">Términos y Políticas</a>
                     </li>
                     <li>
-                        <a href="">Prensa</a>
+                        <a href="#">Prensa</a>
                     </li>
                     <li>
-                        <a href="">Preguntas Frecuentes</a>
+                        <a href="#">Preguntas Frecuentes</a>
                     </li>
                 </ul>
             </div>
+            <!-- caja de  Lo Más Visto Footer-->
             <div class="box-nav-foot">
                 <h4>Lo más visto</h4>
                 <ul>
@@ -259,34 +261,38 @@
                     <li><a href="">Bariloche</a></li>
                 </ul>
             </div>
-        <!-- Contactos footer Start -->
-        <div class="box-nav-foot">
-            <h4>Contactanos</h4>
-            <div id="contactos-footer">
-                <a href="#" target="_blank">
-                    <i class="fa-solid fa-phone"></i> 
-                    <span>+54 9 15 12345678901</span>
-                </a>
-                <a href="https://wa.me/11123456789?text=Hola,%20quisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>+54 9 15 26101234567</span> 
-                </a>            
-                <a href="mailto:booknexttravel@gmail.com?body=Hola!%0D%0A%0D%0AQuisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>booknexttravel@gmail.com</span> 
-                </a>
-                <a href="https://goo.gl/maps/YrQpbu7Qr2155fqD7" target="_blank">
-                    <i class="fa-solid fa-location-dot">
-                    </i> 
-                    <span>9 de julio 1111, Mendoza Ciudad</span>
-                </a>
-            </div>             
+            <!-- Contactos footer Start -->
+            <div class="box-nav-foot">
+                <h4>Contactanos</h4>
+                <div id="contactos-footer">
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-phone"></i> 
+                        <span>+54 9 15 12345678901</span>
+                    </a>
+                    <a href="https://wa.me/11123456789?text=Hola,%20quisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+54 9 15 26101234567</span> 
+                    </a>            
+                    <a href="mailto:booknexttravel@gmail.com?body=Hola!%0D%0A%0D%0AQuisiera%20hacer%20una%20consulta%20sobre%20los%20viajes." target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>booknexttravel@gmail.com</span> 
+                    </a>
+                    <a href="https://goo.gl/maps/YrQpbu7Qr2155fqD7" target="_blank">
+                        <i class="fa-solid fa-location-dot">
+                        </i> 
+                        <span>9 de julio 1111, Mendoza Ciudad</span>
+                    </a>
+                </div>             
+            </div>
         </div>
-        <!-- Contactos footer End -->
-    </nav>
+
     <div id="copyright">
         <p> Copyright © 2022 Next Travel. Todos los derechos reservados. Power by romina-gza</p>
     </div>
     </footer>
+    <!-- CDN Bootstrap v5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
 </body>
 </html>

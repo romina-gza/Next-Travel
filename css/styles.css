@@ -8,6 +8,7 @@ body {
 }
 header {
     position: sticky;
+    width: 100%;
     top:0;
     z-index: 10;
 }
@@ -27,11 +28,13 @@ header {
     font-weight: 600;
     font-size: 1.2rem;
 }
-/* Caja de Informacion Primaria End */
-
+#info-box a {
+    text-decoration: none;
+    color: #424242;
+}
 /* Barra Navegadora Start */
 
-#menu {
+nav {
     margin: 0;
     padding: 1rem 0;
     width: 100%;
@@ -40,40 +43,139 @@ header {
         0px 2.8px 5.3px rgba(0, 0, 0, 0.028),
         0px 9.4px 17.9px rgba(0, 0, 0, 0.033),
         0px 42px 80px rgba(0, 0, 0, 0.04);
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top:0;
 }
-#menu a img {
+nav div a img {
     width: 10rem;
     height: auto;
 }
-#menu ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-#menu ul li {
+nav .ul-propia a {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     margin: 0;
     padding: 1rem; 
     text-transform: uppercase;
+    color: #000000;
 
 }
-#menu ul ul {
-    display: none; 
-}
-a {
-    text-decoration: none;
+    /* idioma/esp-eng-por - css propio */
+nav .ul-propia li {
+    font-size: 1.15rem;
     color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem; 
+    text-transform: uppercase;
 }
+
+
 /* Barra Navegadora End */
-    /* MQ Para celular */
-    
-   
+
+        /* MQ Para celular */
+        @media (min-width: 320px) and (max-width: 576px) {
+            
+            .ul-propia:last-of-type {
+                display: none;
+            }
+            .btn-movil {
+                background-color: rgb(21, 153, 21);
+                color: white;
+            }
+            section .carrusel-propio img {
+                margin: 0;
+                padding: 0;
+                height: 30rem !important;
+            }
+            /* aside none no funciona */
+            aside {
+                display: none;
+            }
+
+            /* pag. inicio */
+            footer #copyright {
+                text-align: center;
+                width: 80%;
+                margin: 0;
+            }
+            #contenedor-f2 {
+                margin: 2rem 0;
+                padding: 0;
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+            
+            }
+            /* carrusel opiniones */
+            /* .bo-contenedor-x3 {
+                width: 60%;
+                height: 35rem;
+                margin: 3rem auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                    "perfil comentario imagen"
+                    ". comentario imagen";
+            } */
+            .bo-perfil {
+                grid-column: 1/4;
+                grid-row: 1/2;
+                order: 1;
+            }
+            .bo-cx3-text {
+                order: 2;
+                grid-column: 1/4;
+                grid-row: 2/4;
+            }
+            .bo-cx3-img-txt {
+                display: none;
+            }
+
+
+            /* nosotros */
+            
+            #nosotros #n-eligenos {
+                grid-column: 1 / 5;
+                grid-row: 2 / 3;
+            }
+            #nosotros #n-equipo .caja {
+                width: 50%;
+                background: #FFCC50;
+            }
+            #nosotros #n-historia {
+                grid-column: 1/5;
+                grid-row: 3/4;
+            }
+            #nosotros #n-equipo {
+                grid-column: 1/5;
+                grid-row: 4/5;
+            }
+
+        }
+
+        /* MQ para Tablets */
+        @media (min-width: 577px) and (max-width: 991px) {
+
+        }
+
+        /* MQ para PC */
+        @media (min-width: 992px) {
+
+            /* Pag. Inicio */
+            nav div div .btn-movil {
+                display: none;
+            }
+            /* Web Nosotros */
+
+
+        }
+
+        
 /* Footer Start */
 footer {
     margin: 0;
@@ -88,11 +190,12 @@ footer {
 #form-box {
     margin: 0;
     padding: 0;
-    width: 140rem;
+    width: 80%;
     height: auto;
     border-bottom: solid 0.1rem #616161;
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 #form-box form {
     margin: 0rem;
@@ -103,13 +206,14 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
     color: #FFCC50;
-
+    margin: 0.5rem 0;
 }
 #form-box form h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     color:#fff;
+    margin: 1.5rem 0;
 }
 #form-box form h2 , h3 {
     text-align: center;
@@ -124,7 +228,6 @@ footer {
 }
 #email {
     width: 25rem;
-    
 }
 #submit {
     width: 15rem;
@@ -135,42 +238,44 @@ footer {
     text-align: center;
     padding: 0;
     margin: 1rem 0.5rem;
-
 }
-    /* Formulario Newsletter End */
-    /* Nav Footer Contenedor de Contenedores & Copyright Start */
-#nav-footer {
+
+    /* Footer Contenedor de logos e info + Copyright Start */
+
+#contenedor-f2 {
     margin: 2rem 0;
     padding: 0;
-    width: 100%;
-    height: 20rem;
+    width: 80%;
+    height: auto;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-#nav-footer h4 {
+#contenedor-f2 h4 {
     font-family: 'Montserrat', sans-serif;
     color: #FFCC50;
     font-size: 1.5rem;
 }
-#nav-footer li a {
+#contenedor-f2 li a {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.3rem;
     text-align: center;
     line-height: 3rem;
 }
-#nav-footer .box-nav-foot {
+#contenedor-f2 .box-nav-foot {
     margin: 2rem;
     padding: 1rem;
     width: auto;
 }
-#nav-footer ul {
+#contenedor-f2 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#nav-footer a {
+#contenedor-f2 a {
     text-decoration: none;
 } 
 
@@ -219,45 +324,55 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
 }
-    /* Nav Footer Contenedor | Contenedores | Copyright End */
+
 
 /* Footer End */
 
 /* HOME O INICIO START */
-section img {
+/* imagen de carrusel */
+section .carrusel-propio div img {
     margin: 0;
     padding: 0;
     border: 0;
     width: 100%;
-    height: 600px;
+    height: 80vh;
 } 
     /* Lo mas visitado Start*/
+
 section .first-box {
     width: 100%;
-    height: 40rem;
+    height: auto;
     background-color: rgb(255, 255, 255);
+    background-color: #616161;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section .first-box h2 {
+    /*estilo para todo h2 */
+
+h2 {  
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
+    margin: 3rem 0;
+    font-weight: 600;
 }
+
 section .first-box .fb-contenedor {
     margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
 section .first-box .fb-contenedor div{
     width: 35rem;
     height: 30rem;
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 section .first-box .fb-contenedor div img {
@@ -269,24 +384,21 @@ section .first-box .fb-contenedor div img {
     /* Escapada de fin de semana Start */
 section .second-box {
     width: 100%;
-    height: 50rem;
+    height: auto;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section .second-box h2 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
+.second-box h2 {
+    margin-bottom: 0;
 }
 section .second-box h3 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-weight: 600;
     font-size: 2rem;
-    margin: 1rem 0;
-    padding: 1rem;
+    margin: 2rem 0;
 }
 section .second-box .sb-contenedor {
     margin: 0;
@@ -294,13 +406,14 @@ section .second-box .sb-contenedor {
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
 section .second-box .sb-contenedor div{
     width: 35rem;
     height: 30rem;
-    margin: 0;
+    margin: 1rem 0;
     padding: 0;
 }
 section .second-box .sb-contenedor div img {
@@ -310,8 +423,8 @@ section .second-box .sb-contenedor div img {
     height: 100%;
 
 }
-    /* Opinione Caja Start Usando GRID*/
-section #box-opiniones {
+    /* Opiniones Caja Start Usando GRID*/
+#box-opiniones {
     width: 100%;
     height: auto;
     background-color: #FFCC50;
@@ -319,18 +432,21 @@ section #box-opiniones {
     padding: 1rem 0 0 0;
 
 }
-section #box-opiniones h3, h4 {
+#box-opiniones h3, h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
     color: #424242;
 }
-section #box-opiniones .bo-caja {
+.bo-caja {
     width: 60%;
     height: 40rem;
-    margin: 0 auto;
-    
+    margin: 0;
 }
 .bo-contenedor-x3 {
+    width: 60%;
+    height: 35rem;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -338,11 +454,7 @@ section #box-opiniones .bo-caja {
         "perfil comentario imagen"
         ". comentario imagen";
 }
-#box-opiniones .bo-caja h3 {
-    font-size: 1.3rem;
-    color: #4b4b4b;
-    text-align: center;
-}
+
 .bo-perfil {
     grid-area: perfil;
     width: auto;
@@ -1043,7 +1155,7 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
 #nosotros {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 15rem 30rem repeat(2, 1fr);
+    grid-template-rows: 15rem 0.5fr repeat(2, 1fr);
     grid-template-areas: 
         "fondo fondo fondo fondo"
         "eligenos eligenos eligenos eligenos"
@@ -1070,12 +1182,12 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
 #n-eligenos {
     grid-area: eligenos;
     width: 100%;
-    height: 30rem;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
 #n-eligenos div {
@@ -1085,12 +1197,11 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
     box-shadow: 
         0px 0px 10px rgba(0, 0, 0, 0.037),
         0px 0px 80px rgba(0, 0, 0, 0.07);
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin: 1rem auto;
 }
 
 #n-eligenos div i {
@@ -1112,10 +1223,13 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
 }
 #n-equipo {
     grid-area: equipo;
+    width: 100%;
+    margin: 0 auto;
 }
 #nosotros #n-equipo .caja {
-    width: 45rem;
-    height: 25rem;
+    width: 80%;
+    height: auto;
+    padding: 2rem;
     margin: 4rem auto;
     background-color: rgb(224, 224, 225);
     display: grid;
@@ -1128,7 +1242,7 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
 }
 #nosotros #n-equipo .caja img {
     grid-column: 1 / 2;
-    width: 20rem;
+    width: 80%;
     height: auto; 
     border-radius: 50%;
     justify-self: center;
@@ -1149,14 +1263,14 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
 }
 #n-historia {
     grid-area: historia;
-    width: 70rem;
+    width: 100%;
     height: auto;
-    margin: 0 5rem;
+    margin: 0 auto;
 
 }
 #n-historia p {
     margin: 1.5rem 5rem;
-    padding: 0 5rem;
+    padding: 0 2rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     line-height: 1.8;
