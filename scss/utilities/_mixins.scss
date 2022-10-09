@@ -1,0 +1,11 @@
+@mixin display-flex ($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin heading-tag-h1 ($family, $font-size, $color){    
+    font-family: $family;
+    font-size: $font-size;
+    color: $color;
+}
