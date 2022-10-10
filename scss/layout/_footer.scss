@@ -1,0 +1,70 @@
+footer {
+    width: 100%;
+    background-color: $background-secundario;
+    @include display-flex(column, center, center);
+
+        @import "./components/form-newsletter"; 
+        #contenedor-f2 {
+            margin: 2rem 0;
+            width: 80%;
+            height: auto;
+            @include display-flex(row, space-around, center);
+            flex-wrap: wrap;
+                .box-nav-foot {
+                    width: auto;
+                }
+                .bnf-first {
+                    width: auto;
+                        img {
+                        width: 25rem;
+                        height: auto;
+                        }
+                        .icons-redes{
+                            @include display-flex(row, center, center);
+                        }
+                        a {
+                            display: inline;
+                            i{
+                                color: $background-default;
+                                margin: 0 1rem;
+                                font-size: 2rem;
+                            }
+                        }
+                        i:hover {
+                            color: $background-principal;
+                        }
+                }
+                h3 {
+                    font-family: $font-family-secundario;
+                    color: $background-principal;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+                a {
+                    font-family: $font-family-principal;
+                    color: $background-default;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    line-height: 3rem;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                i {
+                    color: $background-principal;
+                }
+                span:hover,a:hover {
+                    color: $background-principal
+                    
+                }
+        }
+        .copyright{
+            width: 100%;
+            p {
+                font-family: $font-family-secundario;
+                font-size: 1.3rem;
+                text-align: center;
+                color: $background-default;
+            }
+        }
+}

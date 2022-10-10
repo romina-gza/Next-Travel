@@ -4,8 +4,35 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
-@mixin heading-tag-h1 ($family, $font-size, $color){    
-    font-family: $family;
-    font-size: $font-size;
-    color: $color;
+@mixin display-grid ($grid-template-columns, $grid-template-rows, $column-gap, $row-gap) {
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+}
+@mixin heading-tag-h2 {    
+    font-family: $font-family-principal;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 0;
+}
+@mixin heading-tag-h3 {    
+    font-family: $font-family-principal;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+@mixin etiqueta-a {
+    text-decoration: none;
+}
+@mixin parrafo {
+    font-family: $font-family-principal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
 }

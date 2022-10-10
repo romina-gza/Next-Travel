@@ -299,7 +299,7 @@ footer {
     text-decoration: none;
 } 
 
-#icons-redes {
+.icons-redes {
     width: auto;
     height: auto;
     margin: 0;
@@ -309,7 +309,7 @@ footer {
     justify-content: center;
 
 }
-#icons-redes i {
+.icons-redes i {
     color: white;
     font-size: 2.5rem;
     margin: 0.5rem;
@@ -400,51 +400,7 @@ section .first-box .fb-contenedor div img {
     width: 100%;
     height: 100%;
 }
-    /* Escapada de fin de semana Start */
-section .second-box {
-    width: 100%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.second-box h2 {
-    margin-bottom: 0;
-}
-section .second-box h3 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    font-size: 2rem;
-    margin: 2rem 0;
-}
-section .second-box .sb-contenedor {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-section .second-box .sb-contenedor div{
-    width: 35rem;
-    height: 30rem;
-    margin: 1rem;
-    padding: 0;
-}
-section .second-box .sb-contenedor div:last-of-type {
-    margin-bottom: 2rem;
-}
-section .second-box .sb-contenedor div img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
 
-}
     /* Opiniones Caja Start Usando GRID en MQ desktop*/
 .box-opiniones {
     width: 100%;

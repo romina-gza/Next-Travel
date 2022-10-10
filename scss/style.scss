@@ -1,5 +1,16 @@
 @import "./utilities/variables";
+@import "./utilities/mixins";
+
 @import "./base/typo";
 @import "./base/reset";
+
+
 @import "./layout/header";
-@import "./layout/info-box";
+@import "./layout/footer";
+
+@import "./layout/section-index";
+
+@import "./layout/mq-movil";
+
+
+@import "./components/bootstrap"
