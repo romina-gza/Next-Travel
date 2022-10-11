@@ -1,0 +1,74 @@
+.full-container {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    @include display-flex(row, start, center);
+
+    .tea-caja-sombra {
+        width: 30rem;
+        height: auto;
+        margin: 1rem 3rem;
+        padding-bottom: 1rem;
+        background-color: $background-default;
+        box-shadow:
+        0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+        1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
+        6px 6px 80px rgba(0, 0, 0, 0.15);
+            .tea-cs-img {
+                width: 100%;
+                height: 25rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .tea-cs-precio {
+                    width: 100%;
+                    height: 3.5rem;
+                    background-color: black;
+                    @include display-flex(row, center, center);
+                        p {
+                            font-family: $font-family-principal;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                            color: $background-principal;
+                            margin: 0rem;
+                        }
+                }
+            .tea-cs-texto {
+                    margin: 1rem 1.5rem;
+                        h3 {
+                            margin: 1.5rem 0 1rem;
+                            text-align: start;
+                            font-family: $font-family-principal;
+                            font-size: 1.8rem;
+                        }
+                        p {
+                            font-family: $font-family-principal;
+                            font-size: 1.4rem;
+                            margin: 1rem 0;
+                        }
+                        .tea-cs-dias {
+                            font-family: $font-family-principal;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            color: $background-principal;
+                        }
+            }
+            .tea-cs-submit {
+            width: 100%;
+            height: auto;
+            @include display-flex(row, center, center);
+                input {
+                    width: 15rem;
+                    color: $background-principal;
+                    font-family: $font-family-principal;
+                    font-size: 1.5rem;
+                    padding: 0.6rem;
+                    background-color: black;
+                }
+        }
+    }
+}

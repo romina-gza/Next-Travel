@@ -5,3 +5,86 @@
     max-height: 80vh;
     min-height: 60vh;
 } 
+// carrusel plantilla item propio | opiniones index
+.box-opiniones {
+    width: 100%;
+    height: auto;
+    background-color: $background-principal;
+    padding-top: 1rem;
+    margin-top: 3rem;
+        h2 {
+            @include heading-tag-h2;
+        }
+        h3 {            
+            @include heading-tag-h3;
+            font-size: 1.5rem;
+            color: $background-secundario;            
+        }
+        .bo-caja {
+            width: 60%;
+            height: auto;
+            
+                .bo-contenedor-x3 {
+                    width: 70%;
+                    height: 35rem;
+                    margin: 3rem auto;
+                    @include display-grid(repeat(12, 1fr), repeat(2, 1fr), 1.5fr, none);
+                        .bo-perfil {
+                            grid-column: 1/ 2;
+                            width: 100%;
+                            text-align: center;
+                                img {
+                                    width: 6rem;
+                                    height: 6rem;
+                                    border-radius: 50%;
+                                }
+                        }
+                        .bo-cx3-text {
+                            grid-column: 2 / 10;
+                            margin: 0 2rem;
+                                p {
+                                    font-family: $font-family-principal;
+                                    font-size: 1.4rem;
+                                    line-height: 1.5;                                    
+                                }
+                                h4 {                                    
+                                    margin-top: 0.5rem;
+                                    font-weight: 600;
+                                }
+                                h5 {
+                                    font-size: 1rem;
+                                    color: $background-secundario;
+                                    margin: 0rem;
+                                    
+                                }
+                        }
+                        .bo-cx3-img-txt {
+                            grid-column: 10 /13;
+                            width: 100%;
+                            position: relative;
+                                p:first-of-type{
+                                    font-family: $font-family-principal;
+                                    font-size: 1.5rem;
+                                    font-weight: 600;
+                                }
+                                p:last-of-type {                                    
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    font-family: $font-family-principal;
+                                    font-size: 1.5rem;
+                                    font-weight: 600;
+                                    transform: rotate(3.5deg);
+                                    text-align: center;
+                                }
+                                img {
+                                    width: 23rem;
+                                    height: 30rem;
+                                    border: 0.9rem solid $background-default;
+                                    transform: rotate(4deg);
+                                }
+                        }
+                }
+        }
+        }

@@ -15,6 +15,7 @@ section {
         }
         .fb-contenedor {
             width: 100%;
+            height: auto;
             @include display-flex(row, space-evenly, none);
             flex-wrap: wrap;
         }

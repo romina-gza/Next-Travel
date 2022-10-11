@@ -47,6 +47,8 @@ header {
       font-weight: 600;
       padding: 1rem;
       text-transform: uppercase; }
+    header nav .ul-propia a {
+      color: black; }
     header nav .btn-movil {
       display: none; }
 
@@ -185,6 +187,7 @@ section {
       margin-bottom: 1rem; }
     section .first-box .fb-contenedor {
       width: 100%;
+      height: auto;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -204,3 +207,239 @@ section {
   border: 0;
   max-height: 80vh;
   min-height: 60vh; }
+
+.box-opiniones {
+  width: 100%;
+  height: auto;
+  background-color: #FFCC50;
+  padding-top: 1rem;
+  margin-top: 3rem; }
+  .box-opiniones h2, .box-opiniones footer #form-box form h3, footer #form-box form .box-opiniones h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 0; }
+  .box-opiniones h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #424242; }
+  .box-opiniones .bo-caja {
+    width: 60%;
+    height: auto; }
+    .box-opiniones .bo-caja .bo-contenedor-x3 {
+      width: 70%;
+      height: 35rem;
+      margin: 3rem auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 1.5fr;
+      row-gap: none; }
+      .box-opiniones .bo-caja .bo-contenedor-x3 .bo-perfil {
+        grid-column: 1/ 2;
+        width: 100%;
+        text-align: center; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-perfil img {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%; }
+      .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text {
+        grid-column: 2 / 10;
+        margin: 0 2rem; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text p {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.4rem;
+          line-height: 1.5; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text h4 {
+          margin-top: 0.5rem;
+          font-weight: 600; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-text h5 {
+          font-size: 1rem;
+          color: #424242;
+          margin: 0rem; }
+      .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-img-txt {
+        grid-column: 10 /13;
+        width: 100%;
+        position: relative; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-img-txt p:first-of-type {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 600; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-img-txt p:last-of-type {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-family: "Roboto", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 600;
+          transform: rotate(3.5deg);
+          text-align: center; }
+        .box-opiniones .bo-caja .bo-contenedor-x3 .bo-cx3-img-txt img {
+          width: 23rem;
+          height: 30rem;
+          border: 0.9rem solid #fff;
+          transform: rotate(4deg); }
+
+.caja-logos-socios {
+  background-color: #2b2a2ad9;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center; }
+  .caja-logos-socios h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600; }
+  .caja-logos-socios .logos-socios {
+    flex-wrap: wrap;
+    width: 70%;
+    text-align: center; }
+    .caja-logos-socios .logos-socios img {
+      width: 15rem;
+      margin: 1rem;
+      padding: 1rem; }
+
+section .nosotros-fondo-img {
+  background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+section .pack-friends-fondo-img {
+  background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://images.unsplash.com/photo-1495837174058-628aafc7d610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+section .tour-en-autobus-fondo-img {
+  background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://images.unsplash.com/photo-1582058386649-1fae015d431f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+section .conoce-argentina-fondo-img {
+  background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://cdn.pixabay.com/photo/2016/11/29/09/49/woman-1868817_960_720.jpg");
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+section .contactanos-fondo-img {
+  background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://images.unsplash.com/photo-1601933513556-7926c45d1c49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+section h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #fff; }
+
+.full-container {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center; }
+  .full-container .tea-caja-sombra {
+    width: 30rem;
+    height: auto;
+    margin: 1rem 3rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061), 1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089), 6px 6px 80px rgba(0, 0, 0, 0.15); }
+    .full-container .tea-caja-sombra .tea-cs-img {
+      width: 100%;
+      height: 25rem; }
+      .full-container .tea-caja-sombra .tea-cs-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .full-container .tea-caja-sombra .tea-cs-precio {
+      width: 100%;
+      height: 3.5rem;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .full-container .tea-caja-sombra .tea-cs-precio p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #FFCC50;
+        margin: 0rem; }
+    .full-container .tea-caja-sombra .tea-cs-texto {
+      margin: 1rem 1.5rem; }
+      .full-container .tea-caja-sombra .tea-cs-texto h3 {
+        margin: 1.5rem 0 1rem;
+        text-align: start;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8rem; }
+      .full-container .tea-caja-sombra .tea-cs-texto p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4rem;
+        margin: 1rem 0; }
+      .full-container .tea-caja-sombra .tea-cs-texto .tea-cs-dias {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FFCC50; }
+    .full-container .tea-caja-sombra .tea-cs-submit {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .full-container .tea-caja-sombra .tea-cs-submit input {
+        width: 15rem;
+        color: #FFCC50;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        padding: 0.6rem;
+        background-color: black; }

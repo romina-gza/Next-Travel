@@ -11,6 +11,12 @@
     column-gap: $column-gap;
     row-gap: $row-gap;
 }
+
+@mixin heading-tag-h1 {
+    font-family: $font-family-principal;
+    font-size: 3rem; 
+    color: #fff;
+}
 @mixin heading-tag-h2 {    
     font-family: $font-family-principal;
     font-size: 2rem;
@@ -35,4 +41,24 @@
     font-weight: 600;
     font-size: 1.2rem;
     color: black;
+}
+
+@mixin fondos-principales {
+    @each $pagina, $fondo-img in (
+        nosotros: $fondo-nosotros,
+        pack-friends: $fondo-pack-friends,
+        tour-en-autobus: $fondo-tours-en-autobus,
+        conoce-argentina: $fondo-conoce-argentina,
+        contactanos: $fondo-contactanos,
+        ) {
+        .#{$pagina}-fondo-img {
+            background-image: $fondo-img;
+            width: 100%;
+            height: 15rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 40%;
+            @include display-flex(row, center, center);
+        }
+    }
 }

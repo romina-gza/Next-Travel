@@ -1,0 +1,6 @@
+section {
+        @include fondos-principales;
+            h1 {
+                @include heading-tag-h1;     
+                }
+}

@@ -569,7 +569,7 @@ section .tea-first-box div p {
     width: 50rem;
 }
         /* Los mejores tours en autobús desde Argentina | End */
-section #tea-tours-mendoza-all {
+section .full-container {
     width: 100%;
     height: 55rem;
     background-color: rgb(255, 255, 255);
@@ -579,7 +579,7 @@ section #tea-tours-mendoza-all {
     align-items: center;
 
 }
-section #tea-tours-mendoza-all .tea-caja-sombra {
+section .full-container .tea-caja-sombra {
     width: 30rem;
     height: 49rem;
     margin: 1rem 3rem;
@@ -591,20 +591,20 @@ section #tea-tours-mendoza-all .tea-caja-sombra {
     6px 6px 80px rgba(0, 0, 0, 0.15);
     
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-img {
+section .full-container .tea-caja-sombra .tea-cs-img {
     margin: 0;
     padding: 0;
     width: 30rem;
     height: 25rem;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-img img {
+section .full-container .tea-caja-sombra .tea-cs-img img {
     width: 30rem;
     height: 25rem;
     margin: 0;
     padding: 0;
     
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-precio {
+section .full-container .tea-caja-sombra .tea-cs-precio {
     width: 100%;
     height: 3.5rem;
     margin: 0;
@@ -614,7 +614,7 @@ section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-precio {
     justify-content: center;
     align-items: center;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-precio p {
+section .full-container .tea-caja-sombra .tea-cs-precio p {
     margin: 0;
     padding: 0;
     color: #FFCC50;
@@ -623,11 +623,11 @@ section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-precio p {
     font-weight: 400;
     text-transform:capitalize;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto {
+section .full-container .tea-caja-sombra .tea-cs-texto {
     margin: 1rem 1.5rem;
     padding: 0;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto h3 {
+section .full-container .tea-caja-sombra .tea-cs-texto h3 {
     margin: 1.5rem 0 1rem;
     padding: 0;
     text-align: start;
@@ -635,7 +635,7 @@ section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto h3 {
     font-size: 1.8rem;
 }
 
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto .tea-cs-dias {
+section .full-container .tea-caja-sombra .tea-cs-texto .tea-cs-dias {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
@@ -643,12 +643,12 @@ section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto .tea-cs-dias {
     color: #FFCC50;
     font-weight: 700;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-texto p {
+section .full-container .tea-caja-sombra .tea-cs-texto p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     margin: 1rem 0;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-submit {
+section .full-container .tea-caja-sombra .tea-cs-submit {
     width: 100%;
     height: auto;
     display: flex;
@@ -656,7 +656,7 @@ section #tea-tours-mendoza-all .tea-caja-sombra .tea-cs-submit {
     margin: 0;
     padding: 0;
 }
-section #tea-tours-mendoza-all .tea-caja-sombra input {
+section .full-container .tea-caja-sombra input {
     width: 15rem;
     background-color: #000000;
     color: #FFCC50;
