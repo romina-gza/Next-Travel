@@ -1,13 +1,15 @@
 .full-container {
-    width: 100%;
+    width: 80%;
     height: auto;
     flex-wrap: wrap;
-    @include display-flex(row, start, center);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    @include display-flex(row, space-evenly, center);
 
     .tea-caja-sombra {
         width: 30rem;
         height: auto;
-        margin: 1rem 3rem;
+        margin: 2rem 2rem;
         padding-bottom: 1rem;
         background-color: $background-default;
         box-shadow:
@@ -70,5 +72,14 @@
                     background-color: black;
                 }
         }
+    }
+}
+.tea-caja-sombra:hover {
+    transform: translateY(-1rem);
+    transition-duration: 2s, 1s;
+}
+.tea-cs-submit {
+    input:hover {
+        font-weight: 600;
     }
 }

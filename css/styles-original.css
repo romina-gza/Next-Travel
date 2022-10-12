@@ -539,7 +539,6 @@ section .tea-first-box {
     width: 100%;
     height: 50rem;
 }
-/* section .tea-first-box h2 {} IGNORAR!  */
 /* Para todo el sitio */
 section h2 { 
     font-family: 'Roboto', sans-serif;
