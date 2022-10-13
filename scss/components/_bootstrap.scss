@@ -28,9 +28,7 @@
                     width: 70%;
                     height: 35rem;
                     margin: 3rem auto;
-                    @include display-grid(repeat(12, 1fr), repeat(2, 1fr), 1.5fr, none);
                         .bo-perfil {
-                            grid-column: 1/ 2;
                             width: 100%;
                             text-align: center;
                                 img {
@@ -40,12 +38,12 @@
                                 }
                         }
                         .bo-cx3-text {
-                            grid-column: 2 / 10;
                             margin: 0 2rem;
                                 p {
                                     font-family: $font-family-principal;
                                     font-size: 1.4rem;
-                                    line-height: 1.5;                                    
+                                    line-height: 1.5;   
+                                    margin-top: 2rem;                                 
                                 }
                                 h4 {                                    
                                     margin-top: 0.5rem;
@@ -59,7 +57,6 @@
                                 }
                         }
                         .bo-cx3-img-txt {
-                            grid-column: 10 /13;
                             width: 100%;
                             position: relative;
                                 p:first-of-type{

@@ -24,3 +24,16 @@
             
     }
 }
+.ca-box-text-p ,
+.pf-fb-box-p {
+    @extend .ca-box-text-p;
+    width: 80%;
+    height: auto;
+    margin: 1.5rem auto;
+    p{
+        @include parrafo;
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.6rem;
+    }
+}

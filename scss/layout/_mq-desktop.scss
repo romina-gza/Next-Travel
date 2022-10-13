@@ -1,0 +1,24 @@
+@media (min-width: 992px) {
+
+    .btn-movil {
+        display: none;
+    }
+     /* carrusel opiniones */
+    .bo-contenedor-x3 {
+        @include display-grid(repeat(12, 1fr), repeat(2, 1fr) 1.5fr, none, none);
+
+        .bo-perfil {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .bo-cx3-text {
+            grid-column: 2 / 10;
+            grid-row: 1 / 2;
+        }
+        .bo-cx3-img-txt {
+            grid-column: 10 /13;
+            grid-row: 1 / 2;
+        }
+    }
+
+}

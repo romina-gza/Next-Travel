@@ -21,17 +21,7 @@ footer {
                         }
                         .icons-redes{
                             @include display-flex(row, center, center);
-                        }
-                        a {
-                            display: inline;
-                            i{
-                                color: $background-default;
-                                margin: 0 1rem;
-                                font-size: 2rem;
-                            }
-                        }
-                        i:hover {
-                            color: $background-principal;
+                            @include iconos-redes($background-default);
                         }
                 }
                 h3 {
@@ -53,7 +43,8 @@ footer {
                 i {
                     color: $background-principal;
                 }
-                span:hover,a:hover {
+                span:hover,
+                a:hover {
                     color: $background-principal
                     
                 }

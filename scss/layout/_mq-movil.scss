@@ -1,0 +1,81 @@
+// Nosotros
+    @media (min-width: 320px) and (max-width: 576px) {
+        .ul-propia:last-of-type {
+            display: none;
+        }
+        .btn-movil {
+            background-color: rgb(21, 153, 21);
+            color: white;
+        }
+        
+
+        .caja-logos-socios {
+            display: none;
+                img {
+                    display: none;
+                }
+                h4 {
+                    display: none;
+                }
+        }
+        footer {
+            #copyright {
+                text-align: center;
+                width: 80%;
+                margin: 0;
+            }
+            #contenedor-f2 {
+                margin: 2rem 0;
+                padding: 0;
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+            
+            }
+        }
+        /* carrusel opiniones */
+        .bo-contenedor-x3 {
+            @include display-grid(repeat(12, 1fr), repeat(2, 1fr) 1.5fr, none, none);
+            margin: 3rem auto;
+                .bo-perfil {
+                    grid-column: 1 / 13;
+                    grid-row: 1 / 2;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .bo-cx3-text {
+                    grid-column: 1 / 13;
+                    grid-row: 2 / 3;
+                    width: 100%;
+                }
+                .bo-cx3-img-txt {
+                    display: none;
+                    grid-column: 2 / 3;
+                    grid-row: 3 / 4;
+                }
+                
+            }
+            /* nosotros */  
+        #nosotros {
+            #n-eligenos {
+                grid-column: 1 / 5;
+                grid-row: 2 / 3;
+            }
+            #n-historia {
+                grid-column: 1 / 5;
+                grid-row: 3 / 4;
+            }
+            #n-equipo {
+                grid-column: 1 / 5;
+                grid-row: 4 / 5;
+                .caja {
+                    width: 85%;
+                    background-color: rgb(116, 116, 116);
+                }
+            }
+        }
+}

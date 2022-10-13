@@ -11,6 +11,9 @@
 @import "./layout/section-index";
 
 @import "./layout/mq-movil";
+@import "./layout/mq-tablet";
+@import "./layout/mq-desktop";
+
 
 
 @import "./components/bootstrap";
@@ -18,3 +21,9 @@
 @import "./layout/fondos-principales-pages";
 @import "./components/contenedor-producto";
 @import "./layout/section-pages";
+
+@import "./layout/contactanos";
+@import "./components/form-contactanos";
+
+@import "./layout/nosotros-grid";
+@import "./layout/mq-movil";

@@ -956,7 +956,7 @@ section #contactanos-imagen-fondo  h1 {
     font-size: 3rem; 
     color: #fff;
 }
-section #contactanos-contenedor {
+section .contactanos-contenedor {
     width: 100%;
     height: auto;
     display: flex;
@@ -965,7 +965,7 @@ section #contactanos-contenedor {
 
 }
 /* Primera y Segunda columna */
-section #contactanos-contenedor .contactanos-c-form , .contactanos-c-nos {
+section .contactanos-contenedor .contactanos-c-form , .contactanos-c-nos {
 
     margin: 2rem 0;
     padding: 0;
@@ -973,19 +973,19 @@ section #contactanos-contenedor .contactanos-c-form , .contactanos-c-nos {
     height: auto; 
 
 }
-section #contactanos-contenedor .contactanos-c-form form {
+section .contactanos-contenedor .contactanos-c-form form {
     width: 100%;
     height: auto;
     padding: 0;
 }
-section #contactanos-contenedor .contactanos-c-form form div {
+section .contactanos-contenedor .contactanos-c-form form div {
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0;
     width: 100%;
 }
 
-section #contactanos-contenedor .contactanos-c-form form div label {
+section .contactanos-contenedor .contactanos-c-form form div label {
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
@@ -993,14 +993,14 @@ section #contactanos-contenedor .contactanos-c-form form div label {
     margin: 0;
 
 }
-section #contactanos-contenedor .contactanos-c-form form div input, select{
+section .contactanos-contenedor .contactanos-c-form form div input, select{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     width: auto;
     height: 2rem;
 
 }
-section #contactanos-contenedor .contactanos-c-form form div textarea{
+section .contactanos-contenedor .contactanos-c-form form div textarea{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     width: auto;
@@ -1008,16 +1008,16 @@ section #contactanos-contenedor .contactanos-c-form form div textarea{
     resize: none;
 }
 
-section #contactanos-contenedor .contactanos-c-form form .box-checkbox {
+section .contactanos-contenedor .contactanos-c-form form .box-checkbox {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
-section #contactanos-contenedor .contactanos-c-form form .box-checkbox input {
+section .contactanos-contenedor .contactanos-c-form form .box-checkbox input {
     width: auto;
     height: auto;
 }
-section #contactanos-contenedor .contactanos-c-form form #submit {
+section .contactanos-contenedor .contactanos-c-form form #submit {
     margin: 2rem 0;
     padding: 0.5rem 1.5rem;
     background-color: #000000;
@@ -1030,7 +1030,7 @@ section iframe {
     height: 40rem;
 }
 /* Segunda Columna de Contactanos */
-section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 {
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 {
     width: 100%;
     height: auto;
     display: flex;
@@ -1041,18 +1041,18 @@ section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 
 
 }
 
-section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 img {
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 img {
     width: 8rem;
     height: auto;
     margin: 0 0 0 -2rem;
     padding: 0;
 }
-section #contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 h2 {
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 h2 {
     text-transform: capitalize;
     margin: auto 0;
 }
 
-section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos {
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos {
     width: 100%;
     height: auto;
     margin: 0;  
@@ -1063,12 +1063,12 @@ section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos {
 
 
 }
-section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos h2{
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos h2{
     text-transform: none;
     font-size: 1.7rem;
 }
 
-section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos p{
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: lighter;
@@ -1076,18 +1076,18 @@ section #contactanos-contenedor .contactanos-c-nos .contactanos-c-textos p{
     margin: 0;
     padding: 0;
 }
-section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons {
+section .contactanos-contenedor .contactanos-c-nos .contactos-c-info-icons {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
 
-section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons a i {
+section .contactanos-contenedor .contactanos-c-nos .contactos-c-info-icons a i {
     color: #FFCC50;
     font-size: 1.4rem;
 
 }
-section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons a span {
+section .contactanos-contenedor .contactanos-c-nos .contactos-c-info-icons a span {
     margin: 0 0 0 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
@@ -1095,7 +1095,7 @@ section #contactanos-contenedor .contactanos-c-nos #contactos-c-info-icons a spa
 
 }
 
-section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes {
+section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes {
     width: auto;
     height: auto;
     margin: 0;
@@ -1104,11 +1104,11 @@ section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes {
     flex-direction: row;
     justify-content: flex-start;
 }
-section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes a {
+section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes a {
     text-decoration: none;
 }
 
-section #contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
+section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
     color: #424242;
     font-size: 2.5rem;
     margin: 0 1rem;
