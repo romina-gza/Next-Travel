@@ -1,29 +1,26 @@
+// variables y mixins
 @import "./utilities/variables";
 @import "./utilities/mixins";
-
+//Tipografia y reset
 @import "./base/typo";
 @import "./base/reset";
-
-
+//diseño de header nav y footer para todo el sitio
 @import "./layout/header";
 @import "./layout/footer";
-
+// section para index y otras paginas
 @import "./layout/section-index";
-
+@import "./layout/section-pages";
+// media queries
 @import "./layout/mq-movil";
 @import "./layout/mq-tablet";
 @import "./layout/mq-desktop";
-
-
-
+// partials
 @import "./components/bootstrap";
 @import "./layout/aside-index";
 @import "./layout/fondos-principales-pages";
 @import "./components/contenedor-producto";
-@import "./layout/section-pages";
-
+// pagina contactanos mas su propio formulario
 @import "./layout/contactanos";
 @import "./components/form-contactanos";
-
+// pagina "Nosotros" con grid
 @import "./layout/nosotros-grid";
-@import "./layout/mq-movil";

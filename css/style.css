@@ -200,6 +200,49 @@ section {
         width: 100%;
         height: 100%; }
 
+.tea-first-box {
+  width: 100%;
+  height: auto; }
+  .tea-first-box div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; }
+    .tea-first-box div div {
+      width: 50rem;
+      height: auto;
+      margin: 1.3rem; }
+      .tea-first-box div div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .tea-first-box div div p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: black;
+        font-size: 1.6rem;
+        font-weight: normal; }
+
+.ca-box-text-p,
+.pf-fb-box-p,
+.pf-fb-box-p {
+  width: 80%;
+  height: auto;
+  margin: 1.5rem auto; }
+  .ca-box-text-p p, .pf-fb-box-p p,
+  .pf-fb-box-p p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.6rem; }
+
 @media (min-width: 320px) and (max-width: 576px) {
   .ul-propia:last-of-type {
     display: none; }
@@ -260,12 +303,15 @@ section {
     #nosotros #n-equipo .caja {
       width: 85%; } }
 
-@media (min-width: 577px) and (max-width: 991px) {
+@media (min-width: 577px) and (max-width: 992px) {
   .ul-propia:last-of-type {
     display: none; }
   .btn-movil {
     display: none; }
-  /* carrusel opiniones */
+  section .first-box .fb-contenedor {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
   .bo-contenedor-x3 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -292,7 +338,6 @@ section {
 @media (min-width: 992px) {
   .btn-movil {
     display: none; }
-  /* carrusel opiniones */
   .bo-contenedor-x3 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -307,7 +352,14 @@ section {
       grid-row: 1 / 2; }
     .bo-contenedor-x3 .bo-cx3-img-txt {
       grid-column: 10 /13;
-      grid-row: 1 / 2; } }
+      grid-row: 1 / 2; }
+  section .first-box .fb-contenedor {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-width: 97%;
+    flex-wrap: nowrap; } }
 
 .carrusel-propio div img {
   margin: 0;
@@ -562,49 +614,6 @@ section h1 {
 .tea-cs-submit input:hover {
   font-weight: 600; }
 
-.tea-first-box {
-  width: 100%;
-  height: auto; }
-  .tea-first-box div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto; }
-    .tea-first-box div div {
-      width: 50rem;
-      height: auto;
-      margin: 1.3rem; }
-      .tea-first-box div div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .tea-first-box div div p {
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        font-size: 1.2rem;
-        color: black;
-        font-size: 1.6rem;
-        font-weight: normal; }
-
-.ca-box-text-p,
-.pf-fb-box-p,
-.pf-fb-box-p {
-  width: 80%;
-  height: auto;
-  margin: 1.5rem auto; }
-  .ca-box-text-p p, .pf-fb-box-p p,
-  .pf-fb-box-p p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: black;
-    text-align: center;
-    font-weight: normal;
-    font-size: 1.6rem; }
-
 .contactanos-contenedor {
   width: 100%;
   height: auto;
@@ -827,63 +836,3 @@ iframe {
           margin: 0.5rem 0; }
     #nosotros #n-equipo .caja:first-of-type {
       margin: 2.5rem auto; }
-
-@media (min-width: 320px) and (max-width: 576px) {
-  .ul-propia:last-of-type {
-    display: none; }
-  .btn-movil {
-    background-color: #159915;
-    color: white; }
-  .caja-logos-socios {
-    display: none; }
-    .caja-logos-socios img {
-      display: none; }
-    .caja-logos-socios h4 {
-      display: none; }
-  footer #copyright {
-    text-align: center;
-    width: 80%;
-    margin: 0; }
-  footer #contenedor-f2 {
-    margin: 2rem 0;
-    padding: 0;
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center; }
-  /* carrusel opiniones */
-  .bo-contenedor-x3 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr) 1.5fr;
-    column-gap: none;
-    row-gap: none;
-    margin: 3rem auto; }
-    .bo-contenedor-x3 .bo-perfil {
-      grid-column: 1 / 13;
-      grid-row: 1 / 2;
-      margin: 0 auto;
-      text-align: center; }
-    .bo-contenedor-x3 .bo-cx3-text {
-      grid-column: 1 / 13;
-      grid-row: 2 / 3;
-      width: 100%; }
-    .bo-contenedor-x3 .bo-cx3-img-txt {
-      display: none;
-      grid-column: 2 / 3;
-      grid-row: 3 / 4; }
-  /* nosotros */
-  #nosotros #n-eligenos {
-    grid-column: 1 / 5;
-    grid-row: 2 / 3; }
-  #nosotros #n-historia {
-    grid-column: 1 / 5;
-    grid-row: 3 / 4; }
-  #nosotros #n-equipo {
-    grid-column: 1 / 5;
-    grid-row: 4 / 5; }
-    #nosotros #n-equipo .caja {
-      width: 85%; } }

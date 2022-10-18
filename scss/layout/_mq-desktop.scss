@@ -1,9 +1,11 @@
 @media (min-width: 992px) {
 
+    // esconde boton de la barra nav
     .btn-movil {
         display: none;
     }
-     /* carrusel opiniones */
+
+    // carrusel opiniones 
     .bo-contenedor-x3 {
         @include display-grid(repeat(12, 1fr), repeat(2, 1fr) 1.5fr, none, none);
 
@@ -21,4 +23,18 @@
         }
     }
 
+    //contenedor de 3imgs lo mas visto
+    // section lo mas visitado y escapada de fin de semana en Inicio
+    section {
+        .first-box {
+            .fb-contenedor {
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                min-width: 97%;
+                flex-wrap: nowrap;
+            }
+        }
+    }
 }
