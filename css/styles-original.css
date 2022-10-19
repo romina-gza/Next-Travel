@@ -1,1243 +1,1225 @@
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 header {
-    position: sticky;
-    width: 100%;
-    top:0;
-    z-index: 10;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 /* Caja de Informacion Primaria Start */
 #info-box {
-    margin: 0;
-    padding: 1rem;
-    width: auto;
-    background-color: #FFCC50;
-    display: flex;
-    justify-content: space-between;
+  margin: 0;
+  padding: 1rem;
+  width: auto;
+  background-color: #ffcc50;
+  display: flex;
+  justify-content: space-between;
 }
 #info-box p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 #info-box a {
-    text-decoration: none;
-    color: #424242;
+  text-decoration: none;
+  color: #424242;
 }
 /* Barra Navegadora Start */
 
 nav {
-    margin: 0;
-    padding: 1rem 0;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow:
-        0px 2.8px 5.3px rgba(0, 0, 0, 0.028),
-        0px 9.4px 17.9px rgba(0, 0, 0, 0.033),
-        0px 42px 80px rgba(0, 0, 0, 0.04);
+  margin: 0;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2.8px 5.3px rgba(0, 0, 0, 0.028),
+    0px 9.4px 17.9px rgba(0, 0, 0, 0.033), 0px 42px 80px rgba(0, 0, 0, 0.04);
 }
 nav div a img {
-    width: 10rem;
-    height: auto;
+  width: 10rem;
+  height: auto;
 }
 nav .ul-propia a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 1rem; 
-    text-transform: uppercase;
-    color: #000000;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #000000;
 }
-    /* idioma/esp-eng-por - css propio */
+/* idioma/esp-eng-por - css propio */
 nav .ul-propia li {
-    font-size: 1.15rem;
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin: 0;
-    padding: 1rem; 
-    text-transform: uppercase;
+  font-size: 1.15rem;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  text-transform: uppercase;
 }
-
 
 /* Barra Navegadora End */
 
-        /* MQ Para iPHONE */
-        @media (min-width: 320px) and (max-width: 576px) {
-            
-            .ul-propia:last-of-type {
-                display: none;
-            }
-            .btn-movil {
-                background-color: rgb(21, 153, 21);
-                color: white;
-            }
-            
-             /* aside none no funciona */
-            .caja-logos-socios {
-                display: none;
-            }
-            .caja-logos-socios img {
-                display: none;
-            }
-            .caja-logos-socios h4 {
-                display: none;
-            }
+/* MQ Para iPHONE */
+@media (min-width: 320px) and (max-width: 576px) {
+  .ul-propia:last-of-type {
+    display: none;
+  }
+  .btn-movil {
+    background-color: rgb(21, 153, 21);
+    color: white;
+  }
 
-            /* pag. inicio */
-            footer #copyright {
-                text-align: center;
-                width: 80%;
-                margin: 0;
-            }
-            #contenedor-f2 {
-                margin: 2rem 0;
-                padding: 0;
-                width: 80%;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: center;
-            
-            }
-            /* carrusel opiniones */
-            .bo-contenedor-x3 {
-                width: 80%;
-                height: auto;
-                margin: 3rem auto;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 25% 55% 1fr;
-                grid-template-areas: 
-                    ". perfil ."
-                    "comentario comentario comentario"
-                    ". imagen .";
-            }
-            .bo-perfil img {
-                margin: 0 auto;
-            }
-            .bo-cx3-text {
-                width: 100% !important;
-                
-            }
-            .bo-cx3-img-txt {
-                display: none;
-            }
-            /* nosotros */
-            
-            #nosotros #n-eligenos {
-                grid-column: 1 / 5;
-                grid-row: 2 / 3;
-            }
-            #nosotros #n-equipo .caja {
-                width: 50%;
-                background: #FFCC50;
-            }
-            #nosotros #n-historia {
-                grid-column: 1/5;
-                grid-row: 3/4;
-            }
-            #nosotros #n-equipo {
-                grid-column: 1/5;
-                grid-row: 4/5;
-            }
+  /* aside none no funciona */
+  .caja-logos-socios {
+    display: none;
+  }
+  .caja-logos-socios img {
+    display: none;
+  }
+  .caja-logos-socios h4 {
+    display: none;
+  }
 
-        }
-
-        /* MQ para TABLETS */
-        @media (min-width: 577px) and (max-width: 991px) {
-
-        }
-
-        /* MQ para DESKTOP */
-        @media (min-width: 992px) {
-
-            /* Pag. Inicio */
-            nav div div .btn-movil {
-                display: none;
-            }
-            /* Web Nosotros */
-            nav div a img:hover {
-                transform: scale(1.1, 1.1);
-            }
-
-            section .first-box .fb-contenedor div img:hover,
-            section .second-box .sb-contenedor div img:hover {
-                transform: scale(1.01, 1.01);
-                transition: all 1s;
-            }
-            /* grid carrusel- Opiniones */
-            .bo-contenedor-x3 {
-                width: 60%;
-                height: 35rem;
-                margin: 3rem auto;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                grid-template-areas: 
-                    "perfil comentario imagen"
-                    ". comentario imagen";
-            }
-            
-            
-            
-        }
-
-        
-/* Footer Start */
-footer {
-    margin: 0;
-    padding: 0;
-    background-color: #424242;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    /* Formulario Newsletter Start */
-#form-box {
-    margin: 0;
-    padding: 0;
+  /* pag. inicio */
+  footer #copyright {
+    text-align: center;
     width: 80%;
-    height: auto;
-    border-bottom: solid 0.1rem #616161;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-#form-box form {
-    margin: 0rem;
-    padding: 2rem;
-    
-}
-#form-box form h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: x-large;
-    color: #FFCC50;
-    margin: 0.5rem 0;
-}
-#form-box form h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1.8rem;
-    color:#fff;
-    margin: 1.5rem 0;
-}
-#form-box form h2 , h3 {
-    text-align: center;
-}
-#form-box form input:not(:last-of-type) {
-    margin: 1rem 0.5rem;
-    padding: 0 0 0 0.7rem;
-    width: 25rem;
-    height: 3.5rem;
-    border: none;
-
-}
-#email {
-    width: 25rem;
-}
-#submit {
-    width: 15rem;
-    height: 3.5rem;
-    background-color: #FFCC50;
-    border: none;
-    font-weight: 600;
-    text-align: center;
-    padding: 0;
-    margin: 1rem 0.5rem;
-}
-
-    /* Footer Contenedor de logos e info + Copyright Start */
-
-#contenedor-f2 {
+    margin: 0;
+  }
+  #contenedor-f2 {
     margin: 2rem 0;
     padding: 0;
     width: 80%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+  }
+  /* carrusel opiniones */
+  .bo-contenedor-x3 {
+    width: 80%;
+    height: auto;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 55% 1fr;
+    grid-template-areas:
+      ". perfil ."
+      "comentario comentario comentario"
+      ". imagen .";
+  }
+  .bo-perfil img {
+    margin: 0 auto;
+  }
+  .bo-cx3-text {
+    width: 100% !important;
+  }
+  .bo-cx3-img-txt {
+    display: none;
+  }
+  /* nosotros */
+
+  #nosotros #n-eligenos {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+  }
+  #nosotros #n-equipo .caja {
+    width: 50%;
+    background: #ffcc50;
+  }
+  #nosotros #n-historia {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  #nosotros #n-equipo {
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
+}
+
+/* MQ para TABLETS */
+@media (min-width: 577px) and (max-width: 991px) {
+}
+
+/* MQ para DESKTOP */
+@media (min-width: 992px) {
+  /* Pag. Inicio */
+  nav div div .btn-movil {
+    display: none;
+  }
+  /* Web Nosotros */
+  nav div a img:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  section .first-box .fb-contenedor div img:hover,
+  section .second-box .sb-contenedor div img:hover {
+    transform: scale(1.01, 1.01);
+    transition: all 1s;
+  }
+  /* grid carrusel- Opiniones */
+  .bo-contenedor-x3 {
+    width: 60%;
+    height: 35rem;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "perfil comentario imagen"
+      ". comentario imagen";
+  }
+}
+
+/* Footer Start */
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #424242;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Formulario Newsletter Start */
+#form-box {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: auto;
+  border-bottom: solid 0.1rem #616161;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+#form-box form {
+  margin: 0rem;
+  padding: 2rem;
+}
+#form-box form h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  color: #ffcc50;
+  margin: 0.5rem 0;
+}
+#form-box form h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+#form-box form h2,
+h3 {
+  text-align: center;
+}
+#form-box form input:not(:last-of-type) {
+  margin: 1rem 0.5rem;
+  padding: 0 0 0 0.7rem;
+  width: 25rem;
+  height: 3.5rem;
+  border: none;
+}
+#email {
+  width: 25rem;
+}
+#submit {
+  width: 15rem;
+  height: 3.5rem;
+  background-color: #ffcc50;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  padding: 0;
+  margin: 1rem 0.5rem;
+}
+
+/* Footer Contenedor de logos e info + Copyright Start */
+
+#contenedor-f2 {
+  margin: 2rem 0;
+  padding: 0;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 #contenedor-f2 h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFCC50;
-    font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ffcc50;
+  font-size: 1.5rem;
 }
 #contenedor-f2 li a {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 1.3rem;
-    text-align: center;
-    line-height: 3rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 3rem;
 }
 #contenedor-f2 .box-nav-foot {
-    margin: 2rem;
-    padding: 1rem;
-    width: auto;
+  margin: 2rem;
+  padding: 1rem;
+  width: auto;
 }
 #contenedor-f2 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 #contenedor-f2 a {
-    text-decoration: none;
-} 
+  text-decoration: none;
+}
 
 .icons-redes {
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .icons-redes i {
-    color: white;
-    font-size: 2.5rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-
+  color: white;
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 .logo-footer img {
-    margin: 0;
-    padding: 0;
-    width: 25rem;
-    height: auto;
+  margin: 0;
+  padding: 0;
+  width: 25rem;
+  height: auto;
 }
 #contactos-footer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #contactos-footer a {
-    color: #fff;
-
+  color: #fff;
 }
 #contactos-footer a i {
-    color: #FFCC50;
-    font-size: 1.5rem;
+  color: #ffcc50;
+  font-size: 1.5rem;
 }
 #contactos-footer a span {
-    margin: 0 0 0 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    line-height: 3rem;
+  margin: 0 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 3rem;
 }
 #copyright p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
 }
-
 
 /* Footer End */
 
 /* HOME O INICIO START */
 /* imagen de carrusel */
 section .carrusel-propio div img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    max-height: 80vh;
-    min-height: 60vh;
-} 
-    /* Lo mas visitado Start*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-height: 80vh;
+  min-height: 60vh;
+}
+/* Lo mas visitado Start*/
 
 section .first-box {
-    width: 100%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-    /*estilo para todo h2 */
+/*estilo para todo h2 */
 
-h2 {  
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    margin: 3rem 0;
-    font-weight: 600;
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0;
+  font-weight: 600;
 }
 
 section .first-box .fb-contenedor {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-section .first-box .fb-contenedor div{
-    width: 35rem;
-    height: 30rem;
-    margin: 1rem;
-    padding: 0;
+section .first-box .fb-contenedor div {
+  width: 35rem;
+  height: 30rem;
+  margin: 1rem;
+  padding: 0;
 }
 section .first-box .fb-contenedor div img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-    /* Opiniones Caja Start Usando GRID en MQ desktop*/
+/* Opiniones Caja Start Usando GRID en MQ desktop*/
 .box-opiniones {
-    width: 100%;
-    height: auto;
-    background-color: #FFCC50;
-    margin: 0;
-    padding: 1rem 0 0 0;
-
+  width: 100%;
+  height: auto;
+  background-color: #ffcc50;
+  margin: 0;
+  padding: 1rem 0 0 0;
 }
-.box-opiniones h3, h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #424242;
+.box-opiniones h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #424242;
 }
-
 
 .bo-caja {
-    width: 60%;
-    height: auto;
-    margin: 0;
+  width: 60%;
+  height: auto;
+  margin: 0;
 }
 .bo-perfil {
-    grid-area: perfil;
-    width: 100%;
-    margin: 0;
-    justify-self: end;
+  grid-area: perfil;
+  width: 100%;
+  margin: 0;
+  justify-self: end;
 }
 .bo-perfil img {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin: 0;
-    
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0;
 }
 .bo-cx3-text {
-    grid-area: comentario;
-    margin: 0 3rem;
-    width: 50rem;
+  grid-area: comentario;
+  margin: 0 3rem;
+  width: 50rem;
 }
 .bo-cx3-text p {
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
 }
 .bo-contenedor-x3 .bo-cx3-text h4 {
-    margin: 0.5rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 .bo-contenedor-x3 .bo-cx3-text h5 {
-    margin: 0;
-    font-family: 'Roboto',sans-serif;
-    color: #424242;
-    font-size: 1rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  font-size: 1rem;
 }
 .bo-contenedor-x3 .bo-cx3-img-txt {
-    grid-area: imagen;
-    transform: rotate(4deg);
-    margin: 0;
+  grid-area: imagen;
+  transform: rotate(4deg);
+  margin: 0;
 }
 .bo-contenedor-x3 .bo-cx3-img-txt p:first-of-type {
-    margin: -3.5rem 0 1rem 0 ;
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transform: rotate(-3.5deg);
+  margin: -3.5rem 0 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transform: rotate(-3.5deg);
 }
 .bo-contenedor-x3 .bo-cx3-img-txt p:last-of-type {
-    margin: -3.5rem 0 0 8rem ;
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+  margin: -3.5rem 0 0 8rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .bo-contenedor-x3 .bo-cx3-img-txt img {
-    width: 23rem;
-    height: 30rem;
-    border: 0.9rem solid #fff;
+  width: 23rem;
+  height: 30rem;
+  border: 0.9rem solid #fff;
 }
-    /* Logos de Socios Start */
+/* Logos de Socios Start */
 .caja-logos-socios {
-    background-color: #2b2a2ad9;
-    width: auto;
-    margin: 0;
-    padding: 2rem 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #2b2a2ad9;
+  width: auto;
+  margin: 0;
+  padding: 2rem 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .caja-logos-socios h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    color:#ffffff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 .caja-logos-socios .logos-socios {
-    flex-wrap: nowrap; 
-    margin: 0;
-    padding: 0;
-    width: 70%;
-    text-align: center;
-
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  text-align: center;
 }
 .caja-logos-socios img {
-    width: 15rem;
-    height: auto;
-    margin: 1rem;
-    padding: 1rem;
-
-} 
-    /* Logos de Socios End */
+  width: 15rem;
+  height: auto;
+  margin: 1rem;
+  padding: 1rem;
+}
+/* Logos de Socios End */
 /* HOME O INICIO END */
 /* TOURS EN AUTOBÚS ESTILO START*/
 #tea-fondo-imagen {
-    width: 100%;
-    height: 15rem;
-    background-image: linear-gradient(rgba(54, 58, 64, 0.484), rgba(57, 57, 57, 0.5)), url("https://images.unsplash.com/photo-1582058386649-1fae015d431f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  width: 100%;
+  height: 15rem;
+  background-image: linear-gradient(
+      rgba(54, 58, 64, 0.484),
+      rgba(57, 57, 57, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1582058386649-1fae015d431f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-section #tea-fondo-imagen  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem; 
-    color: #fff;
+section #tea-fondo-imagen h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #fff;
 }
-    /* Los mejores tours en autobús desde Argentina | Start */
+/* Los mejores tours en autobús desde Argentina | Start */
 section .tea-first-box {
-    width: 100%;
-    height: 50rem;
+  width: 100%;
+  height: 50rem;
 }
 /* Para todo el sitio */
-section h2 { 
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;     
-    text-align: center;
-    text-transform: uppercase;
+section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
-section .tea-first-box div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+section .tea-first-box div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 section .tea-first-box div img {
-    width: 65rem;
-    height: 40rem;
-    margin: 0;
-    padding: 0;
+  width: 65rem;
+  height: 40rem;
+  margin: 0;
+  padding: 0;
 }
 section .tea-first-box div p {
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin: 0 4rem;
-    padding: 0;
-    width: 50rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 0 4rem;
+  padding: 0;
+  width: 50rem;
 }
-        /* Los mejores tours en autobús desde Argentina | End */
+/* Los mejores tours en autobús desde Argentina | End */
 section .full-container {
-    width: 100%;
-    height: 55rem;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 55rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 section .full-container .tea-caja-sombra {
-    width: 30rem;
-    height: 49rem;
-    margin: 1rem 3rem;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    box-shadow:
-    0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
-    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
-    6px 6px 80px rgba(0, 0, 0, 0.15);
-    
+  width: 30rem;
+  height: 49rem;
+  margin: 1rem 3rem;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089), 6px 6px 80px rgba(0, 0, 0, 0.15);
 }
 section .full-container .tea-caja-sombra .tea-cs-img {
-    margin: 0;
-    padding: 0;
-    width: 30rem;
-    height: 25rem;
+  margin: 0;
+  padding: 0;
+  width: 30rem;
+  height: 25rem;
 }
 section .full-container .tea-caja-sombra .tea-cs-img img {
-    width: 30rem;
-    height: 25rem;
-    margin: 0;
-    padding: 0;
-    
+  width: 30rem;
+  height: 25rem;
+  margin: 0;
+  padding: 0;
 }
 section .full-container .tea-caja-sombra .tea-cs-precio {
-    width: 100%;
-    height: 3.5rem;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section .full-container .tea-caja-sombra .tea-cs-precio p {
-    margin: 0;
-    padding: 0;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform:capitalize;
+  margin: 0;
+  padding: 0;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 section .full-container .tea-caja-sombra .tea-cs-texto {
-    margin: 1rem 1.5rem;
-    padding: 0;
+  margin: 1rem 1.5rem;
+  padding: 0;
 }
 section .full-container .tea-caja-sombra .tea-cs-texto h3 {
-    margin: 1.5rem 0 1rem;
-    padding: 0;
-    text-align: start;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
+  margin: 1.5rem 0 1rem;
+  padding: 0;
+  text-align: start;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
 }
 
 section .full-container .tea-caja-sombra .tea-cs-texto .tea-cs-dias {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    color: #FFCC50;
-    font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #ffcc50;
+  font-weight: 700;
 }
 section .full-container .tea-caja-sombra .tea-cs-texto p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    margin: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 section .full-container .tea-caja-sombra .tea-cs-submit {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 section .full-container .tea-caja-sombra input {
-    width: 15rem;
-    background-color: #000000;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0.6rem;
-
+  width: 15rem;
+  background-color: #000000;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.6rem;
 }
 
 /* TOURS EN AUTOBÚS ESTILO END */
 
 /* PACK FRIENDS ESTILO START */
 #pf-fondo-imagen {
-    width: 100%;
-    height: 15rem;
-    background-image: linear-gradient(rgba(54, 58, 64, 0.484), rgba(57, 57, 57, 0.5)), url("https://images.unsplash.com/photo-1495837174058-628aafc7d610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 15rem;
+  background-image: linear-gradient(
+      rgba(54, 58, 64, 0.484),
+      rgba(57, 57, 57, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1495837174058-628aafc7d610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-section #pf-fondo-imagen  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem; 
-    color: #fff;
+section #pf-fondo-imagen h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #fff;
 }
 section .pf-fb-box-p {
-    width: 100%;
-    height: auto; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 section .pf-fb-box-p p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin: 0;
-    padding: 0rem 10rem 2rem;
-
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0rem 10rem 2rem;
 }
-    /* Contenedor de viajes Start */
+/* Contenedor de viajes Start */
 section #pf-viajes-contenedor {
-    width: 100%;
-    height: 55rem;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 55rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 section #pf-viajes-contenedor .pf-caja-sombra {
-    width: 30rem;
-    height: 49rem;
-    margin: 1rem 3rem;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    box-shadow:
-    0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
-    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
-    6px 6px 80px rgba(0, 0, 0, 0.15);
+  width: 30rem;
+  height: 49rem;
+  margin: 1rem 3rem;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089), 6px 6px 80px rgba(0, 0, 0, 0.15);
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-img {
-    margin: 0;
-    padding: 0;
-    width: 30rem;
-    height: 25rem;
+  margin: 0;
+  padding: 0;
+  width: 30rem;
+  height: 25rem;
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-img img {
-    width: 30rem;
-    height: 25rem;
-    margin: 0;
-    padding: 0;
-    
+  width: 30rem;
+  height: 25rem;
+  margin: 0;
+  padding: 0;
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-precio {
-    width: 100%;
-    height: 3.5rem;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-precio p {
-    margin: 0;
-    padding: 0;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform:capitalize;
+  margin: 0;
+  padding: 0;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto {
-    margin: 1rem 1.5rem;
-    padding: 0;
+  margin: 1rem 1.5rem;
+  padding: 0;
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto h3 {
-    margin: 1.5rem 0 1rem;
-    padding: 0;
-    text-align: start;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
+  margin: 1.5rem 0 1rem;
+  padding: 0;
+  text-align: start;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
 }
 
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto .pf-cs-dias {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    color: #FFCC50;
-    font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #ffcc50;
+  font-weight: 700;
 }
-section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    margin: 1rem 0;
+section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-texto p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 section #pf-viajes-contenedor .pf-caja-sombra .pf-cs-submit {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 section #pf-viajes-contenedor .pf-caja-sombra input {
-    width: 15rem;
-    background-color: #000000;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0.6rem;
-
+  width: 15rem;
+  background-color: #000000;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.6rem;
 }
 /* PACK FRIENDS ESTILO END */
 
 /* CONOCE ARGENTINA START */
 section #ca-imagen-fondo {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 15rem;
-    background-image: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://cdn.pixabay.com/photo/2016/11/29/09/49/woman-1868817_960_720.jpg");
-    background-size: cover;
-    background-position: 100% 34%; 
-    /* Nota: nueva manera de posicionar una imagen */
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 15rem;
+  background-image: linear-gradient(
+      rgba(51, 55, 60, 0.484),
+      rgba(15, 15, 15, 0.5)
+    ),
+    url("https://cdn.pixabay.com/photo/2016/11/29/09/49/woman-1868817_960_720.jpg");
+  background-size: cover;
+  background-position: 100% 34%;
+  /* Nota: nueva manera de posicionar una imagen */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section #ca-imagen-fondo h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem; 
-    color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #fff;
 }
 section .ca-box-text-p {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 section .ca-box-text-p p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
-    line-height: 1.8;
-    padding: 0rem 10rem;
-    
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.8;
+  padding: 0rem 10rem;
 }
 /* Cajas contenedoras de viajes en Conoce Argentina */
 section #ca-viajes-contenedor {
-    width: 100%;
-    height: 55rem;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 55rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 section #ca-viajes-contenedor .ca-caja-sombra {
-    width: 30rem;
-    height: 49rem;
-    margin: 1rem 3rem;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    box-shadow:
-    0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
-    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089),
-    6px 6px 80px rgba(0, 0, 0, 0.15);
+  width: 30rem;
+  height: 49rem;
+  margin: 1rem 3rem;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.4px 0.4px 5.3px rgba(0, 0, 0, 0.061),
+    1.3px 1.3px 17.9px rgba(0, 0, 0, 0.089), 6px 6px 80px rgba(0, 0, 0, 0.15);
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-img {
-    margin: 0;
-    padding: 0;
-    width: 30rem;
-    height: 25rem;
+  margin: 0;
+  padding: 0;
+  width: 30rem;
+  height: 25rem;
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-img img {
-    width: 30rem;
-    height: 25rem;
-    margin: 0;
-    padding: 0;
-    
+  width: 30rem;
+  height: 25rem;
+  margin: 0;
+  padding: 0;
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-precio {
-    width: 100%;
-    height: 3.5rem;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-precio p {
-    margin: 0;
-    padding: 0;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform:capitalize;
+  margin: 0;
+  padding: 0;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto {
-    margin: 1rem 1.5rem;
-    padding: 0;
+  margin: 1rem 1.5rem;
+  padding: 0;
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto h3 {
-    margin: 1.5rem 0 1rem;
-    padding: 0;
-    text-align: start;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
+  margin: 1.5rem 0 1rem;
+  padding: 0;
+  text-align: start;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
 }
 
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto .ca-cs-dias {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    color: #FFCC50;
-    font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #ffcc50;
+  font-weight: 700;
 }
-section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    margin: 1rem 0;
+section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-texto p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 section #ca-viajes-contenedor .ca-caja-sombra .ca-cs-submit {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 section #ca-viajes-contenedor .ca-caja-sombra input {
-    width: 15rem;
-    background-color: #000000;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0.6rem;
-
+  width: 15rem;
+  background-color: #000000;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0.6rem;
 }
 
 /* CONOCE ARGENTINA END */
 
 /* CONTACTANOS START */
 section #contactanos-imagen-fondo {
-    width: 100%;
-    height: 15rem;
-    background-image:  linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)), url("https://images.unsplash.com/photo-1601933513556-7926c45d1c49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  width: 100%;
+  height: 15rem;
+  background-image: linear-gradient(
+      rgba(51, 55, 60, 0.484),
+      rgba(15, 15, 15, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1601933513556-7926c45d1c49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-section #contactanos-imagen-fondo  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem; 
-    color: #fff;
+section #contactanos-imagen-fondo h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #fff;
 }
 section .contactanos-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 /* Primera y Segunda columna */
-section .contactanos-contenedor .contactanos-c-form , .contactanos-c-nos {
-
-    margin: 2rem 0;
-    padding: 0;
-    width: 45rem;
-    height: auto; 
-
+section .contactanos-contenedor .contactanos-c-form,
+.contactanos-c-nos {
+  margin: 2rem 0;
+  padding: 0;
+  width: 45rem;
+  height: auto;
 }
 section .contactanos-contenedor .contactanos-c-form form {
-    width: 100%;
-    height: auto;
-    padding: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 section .contactanos-contenedor .contactanos-c-form form div {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5rem 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  width: 100%;
 }
 
 section .contactanos-contenedor .contactanos-c-form form div label {
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 0;
-
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
 }
-section .contactanos-contenedor .contactanos-c-form form div input, select{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    width: auto;
-    height: 2rem;
-
+section .contactanos-contenedor .contactanos-c-form form div input,
+select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: auto;
+  height: 2rem;
 }
-section .contactanos-contenedor .contactanos-c-form form div textarea{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    width: auto;
-    height: 15rem;
-    resize: none;
+section .contactanos-contenedor .contactanos-c-form form div textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: auto;
+  height: 15rem;
+  resize: none;
 }
 
 section .contactanos-contenedor .contactanos-c-form form .box-checkbox {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 section .contactanos-contenedor .contactanos-c-form form .box-checkbox input {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 section .contactanos-contenedor .contactanos-c-form form #submit {
-    margin: 2rem 0;
-    padding: 0.5rem 1.5rem;
-    background-color: #000000;
-    color: #FFCC50;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
+  margin: 2rem 0;
+  padding: 0.5rem 1.5rem;
+  background-color: #000000;
+  color: #ffcc50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
 }
 section iframe {
-    width: 100%;
-    height: 40rem;
+  width: 100%;
+  height: 40rem;
 }
 /* Segunda Columna de Contactanos */
-section .contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-
+section
+  .contactanos-contenedor
+  .contactanos-c-nos
+  .contactanos-c-nos-logo-y-h2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
-section .contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 img {
-    width: 8rem;
-    height: auto;
-    margin: 0 0 0 -2rem;
-    padding: 0;
+section
+  .contactanos-contenedor
+  .contactanos-c-nos
+  .contactanos-c-nos-logo-y-h2
+  img {
+  width: 8rem;
+  height: auto;
+  margin: 0 0 0 -2rem;
+  padding: 0;
 }
-section .contactanos-contenedor .contactanos-c-nos .contactanos-c-nos-logo-y-h2 h2 {
-    text-transform: capitalize;
-    margin: auto 0;
+section
+  .contactanos-contenedor
+  .contactanos-c-nos
+  .contactanos-c-nos-logo-y-h2
+  h2 {
+  text-transform: capitalize;
+  margin: auto 0;
 }
 
 section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos {
-    width: 100%;
-    height: auto;
-    margin: 0;  
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos h2{
-    text-transform: none;
-    font-size: 1.7rem;
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos h2 {
+  text-transform: none;
+  font-size: 1.7rem;
 }
 
-section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
+section .contactanos-contenedor .contactanos-c-nos .contactanos-c-textos p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 section .contactanos-contenedor .contactanos-c-nos .contactos-c-info-icons {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
 }
 
 section .contactanos-contenedor .contactanos-c-nos .contactos-c-info-icons a i {
-    color: #FFCC50;
-    font-size: 1.4rem;
-
+  color: #ffcc50;
+  font-size: 1.4rem;
 }
-section .contactanos-contenedor .contactanos-c-nos .contactos-c-info-icons a span {
-    margin: 0 0 0 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    line-height: 3rem;
-
+section
+  .contactanos-contenedor
+  .contactanos-c-nos
+  .contactos-c-info-icons
+  a
+  span {
+  margin: 0 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  line-height: 3rem;
 }
 
 section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes {
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i{
-    color: #424242;
-    font-size: 2.5rem;
-    margin: 0 1rem;
-    padding: 0;
+section .contactanos-contenedor .contactanos-c-nos #contactanos-icons-redes i {
+  color: #424242;
+  font-size: 2.5rem;
+  margin: 0 1rem;
+  padding: 0;
 }
 
 /* CONTACTANOS END */
 
 /* Start Pagina Nosotros */
 #nosotros {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 15rem 0.5fr repeat(2, 1fr);
-    grid-template-areas: 
-        "fondo fondo fondo fondo"
-        "eligenos eligenos eligenos eligenos"
-        "historia historia equipo equipo"
-        "historia historia equipo equipo";
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15rem 0.5fr repeat(2, 1fr);
+  grid-template-areas:
+    "fondo fondo fondo fondo"
+    "eligenos eligenos eligenos eligenos"
+    "historia historia equipo equipo"
+    "historia historia equipo equipo";
 }
 #n-img-fondo {
-    grid-area: fondo;
-    width: 100%;
-    height: 15rem;
-    background-image: linear-gradient(rgba(54, 58, 64, 0.484), rgba(43, 43, 43, 0.5)), url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-area: fondo;
+  width: 100%;
+  height: 15rem;
+  background-image: linear-gradient(
+      rgba(54, 58, 64, 0.484),
+      rgba(43, 43, 43, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #n-img-fondo h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem; 
-    color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #fff;
 }
 #n-eligenos {
-    grid-area: eligenos;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+  grid-area: eligenos;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #n-eligenos div {
-    width: 30rem;
-    height: 20rem;
-    border-radius: 2.5rem;
-    box-shadow: 
-        0px 0px 10px rgba(0, 0, 0, 0.037),
-        0px 0px 80px rgba(0, 0, 0, 0.07);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem auto;
+  width: 30rem;
+  height: 20rem;
+  border-radius: 2.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.037),
+    0px 0px 80px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
 }
 
 #n-eligenos div i {
-    font-size: 5rem;
-    margin: 1rem;
-    color:#FFCC50;
+  font-size: 5rem;
+  margin: 1rem;
+  color: #ffcc50;
 }
-#n-eligenos div h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    margin: 0.5rem;
-
+#n-eligenos div h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  margin: 0.5rem;
 }
 #n-eligenos div p {
-    text-align: center;
-    margin: 1rem;
-    font-family: 'Monserrat',sans-serif;
-    font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.5rem;
 }
 #n-equipo {
-    grid-area: equipo;
-    width: 100%;
-    margin: 0 auto;
+  grid-area: equipo;
+  width: 100%;
+  margin: 0 auto;
 }
 #nosotros #n-equipo .caja {
-    width: 80%;
-    height: auto;
-    padding: 2rem;
-    margin: 4rem auto;
-    background-color: rgb(224, 224, 225);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-
+  width: 80%;
+  height: auto;
+  padding: 2rem;
+  margin: 4rem auto;
+  background-color: rgb(224, 224, 225);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
 #nosotros #n-equipo .caja:first-of-type {
-    margin: 2.5rem auto;
+  margin: 2.5rem auto;
 }
 #nosotros #n-equipo .caja img {
-    grid-column: 1 / 2;
-    width: 80%;
-    height: auto; 
-    border-radius: 50%;
-    justify-self: center;
-    align-self: center;
+  grid-column: 1 / 2;
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
 }
 
 #nosotros #n-equipo .caja div {
-    width: auto;
-    justify-self: center;
-    align-self: center;
-    margin: 0;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+  margin: 0;
 }
-#nosotros #n-equipo .caja div h3, p {
-    grid-column: 2/ 3;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    margin: 0.5rem 0;
+#nosotros #n-equipo .caja div h3,
+p {
+  grid-column: 2/ 3;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0.5rem 0;
 }
 #n-historia {
-    grid-area: historia;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-
+  grid-area: historia;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 #n-historia p {
-    margin: 1.5rem 5rem;
-    padding: 0 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.8;
+  margin: 1.5rem 5rem;
+  padding: 0 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
 }

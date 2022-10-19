@@ -1,96 +1,88 @@
 #nosotros {
-    @include display-grid(repeat(4, 1fr), 15rem 0.5fr repeat(2, 1fr), none, none);
-        .nosotros-fondo-img {
-            grid-column: 1 / 5;
-            grid-row: 1 / 2;
-
+  #n-eligenos {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    div {
+      @include display-flex(column, center, center);
+      width: 30rem;
+      height: 20rem;
+      border-radius: 2.5rem;
+      margin: 1rem auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.037),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
+      i {
+        font-size: 5rem;
+        margin: 1rem;
+        color: $background-principal;
+      }
+      h3 {
+        font-family: $font-family-principal;
+        font-size: 1.8rem;
+        margin: 0.5rem;
+      }
+      p {
+        font-family: $font-family-secundario;
+        font-size: 1.5rem;
+        margin: 1rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+  #n-historia {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    p {
+      font-family: $font-family-secundario;
+      font-size: 1.5rem;
+      line-height: 1.8;
+      margin: 1.5rem 5rem;
+      padding: 0 2rem;
+    }
+  }
+  #n-equipo {
+    width: 100%;
+    margin: 0 auto;
+    .caja {
+      width: 70%;
+      height: auto;
+      padding: 2rem;
+      margin: 4rem auto;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.405);
+      // color gris claro
+      background-color: rgb(247, 247, 247);
+      @include display-grid(repeat(2, 1fr), 1fr, none, none);
+      img {
+        grid-column: 1 / 2;
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+        justify-self: center;
+        align-self: center;
+      }
+      div {
+        width: auto;
+        justify-self: center;
+        align-self: center;
+        margin: 0;
+        h3 {
+          font-weight: 700;
+          font-size: 1.7rem;
+          font-family: $font-family-secundario;
         }
-        #n-eligenos {
-            grid-column: 1 / 5;
-            grid-row: 2 / 3;
-            @include display-flex(row, none, center);
-            flex-wrap: wrap;
-            width: 100%;
-            height: auto;
-                div {
-                    @include display-flex(column, center, center);
-                    width: 30rem;
-                    height: 20rem;
-                    border-radius: 2.5rem;
-                    margin: 1rem auto;
-                    box-shadow: 
-                        0px 0px 10px rgba(0, 0, 0, 0.037),
-                        0px 0px 80px rgba(0, 0, 0, 0.07);
-                        i {
-                            font-size: 5rem;
-                            margin: 1rem;
-                            color: $background-principal;
-                        }
-                        h3 {
-                            font-family: $font-family-principal;
-                            font-size: 1.8rem;
-                            margin: 0.5rem;
-
-                        }
-                        p {
-                            font-family: $font-family-secundario;
-                            font-size: 1.5rem;
-                            margin: 1rem;
-                            text-align: center;
-                        }
-                }
+        p {
+          grid-column: 2 / 3;
+          font-size: 1.5rem;
+          font-weight: 500;
+          font-family: $font-family-principal;
+          margin: 0.5rem 0;
         }
-        #n-historia {
-            grid-column: 1 / 3;
-            grid-row: 3 / 5;
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-                p {
-                    font-family: $font-family-secundario;
-                    font-size: 1.5rem;
-                    line-height: 1.8;
-                    margin: 1.5rem 5rem;
-                    padding: 0 2rem;
-                }
-        }
-        #n-equipo {
-            grid-column: 3 / 5;
-            grid-row: 3 / 5;
-            width: 100%;
-            margin: 0 auto;
-                .caja {
-                    width: 80%;
-                    height: auto;
-                    padding: 2rem;
-                    margin: 4rem auto;
-                    // color gris claro
-                    background-color: rgb(224, 224, 225);
-                    @include display-grid(repeat(2, 1fr), 1fr, none, none);
-                        img {
-                            grid-column: 1 / 2;
-                            width: 80%;
-                            height: auto;
-                            border-radius: 50%;
-                            justify-self: center;
-                            align-self: center;
-                        }
-                        div {
-                            width: auto;
-                            justify-self: center;
-                            align-self: center;
-                            margin: 0;
-                            h3,
-                            p {
-                                grid-column: 2 / 3;
-                                font-size: 1.5rem;
-                                font-family: $font-family-principal;
-                                margin: 0.5rem 0;
-                            }
-                        }
-                }
-                .caja:first-of-type {
-                    margin: 2.5rem auto;
-                }
-        }
+      }
+    }
+    .caja:first-of-type {
+      margin: 2.5rem auto;
+    }
+  }
 }

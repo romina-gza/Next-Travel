@@ -1,39 +1,38 @@
 .tea-first-box {
+  width: 100%;
+  height: auto;
+  div {
+    @include display-flex(row, center, start);
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     div {
-        @include display-flex(row, center, start);
-        flex-wrap: wrap;
+      width: 50rem;
+      height: auto;
+      margin: 1.3rem;
+      img {
         width: 100%;
-        height: auto;
-            div {
-                width: 50rem;
-                height: auto;
-                margin: 1.3rem;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-                p {
-                    @include parrafo;
-                    font-size: 1.6rem;
-                    font-weight: normal;
-                }
-            }
-            
-    }
-}
-.ca-box-text-p ,
-.pf-fb-box-p {
-    @extend .ca-box-text-p;
-    width: 80%;
-    height: auto;
-    margin: 1.5rem auto;
-    p{
+        height: 100%;
+        object-fit: cover;
+      }
+      p {
         @include parrafo;
-        text-align: center;
-        font-weight: normal;
         font-size: 1.6rem;
+        font-weight: normal;
+      }
     }
+  }
+}
+.ca-box-text-p,
+.pf-fb-box-p {
+  @extend .ca-box-text-p;
+  width: 80%;
+  height: auto;
+  margin: 1.5rem auto;
+  p {
+    @include parrafo;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
 }

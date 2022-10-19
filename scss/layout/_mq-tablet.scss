@@ -1,43 +1,49 @@
 @media (min-width: 577px) and (max-width: 992px) {
-    .ul-propia:last-of-type {
-        display: none;
+  //Inicio
+  .ul-propia:last-of-type {
+    display: none;
+  }
+  .btn-movil {
+    display: none;
+  }
+  // Lo mas visitado y escapada de fin de semana Pagina Inicio
+  section {
+    .first-box {
+      .fb-contenedor {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
     }
-    .btn-movil {
-        display: none;
+  }
+  // carrusel opiniones Pagina Inicio
+  .bo-contenedor-x3 {
+    @include display-grid(repeat(12, 1fr), auto 1fr, none, none);
+    margin: 3rem auto;
+    .bo-perfil {
+      grid-column: 1 / 13;
+      grid-row: 1 / 2;
+      margin: 0 auto;
+      text-align: center;
     }
-    // section lo mas visitado y escapada de fin de semana en Inicio
-    section {
-        .first-box {
-            .fb-contenedor {
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-            }
-        }
+    .bo-cx3-text {
+      grid-column: 1 / 13;
+      grid-row: 2 / 3;
+      width: 100%;
     }
-    // carrusel opiniones 
-    .bo-contenedor-x3 {
-        @include display-grid(repeat(12, 1fr), repeat(2, 1fr) 1.5fr, none, none);
-        margin: 3rem auto;
-            .bo-perfil {
-                grid-column: 1 / 13;
-                grid-row: 1 / 2;
-                margin: 0 auto;
-                text-align: center;
-            }
-            .bo-cx3-text {
-                grid-column: 1 / 13;
-                grid-row: 2 / 3;
-                width: 100%;
-            }
-            .bo-cx3-img-txt {
-                display: none;
-                grid-column: 2 / 3;
-                grid-row: 3 / 4;
-            }
-            
-        }
-        aside {
-            display: none;
-        }
+    .bo-cx3-img-txt {
+      display: none;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+  aside {
+    display: none;
+  }
+  // Pagina Nosotros
+  #nosotros {
+    #n-eligenos {
+      @include display-flex(column, none, center);
+    }
+  }
 }

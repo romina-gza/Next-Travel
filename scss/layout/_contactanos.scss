@@ -1,75 +1,71 @@
 // Pagina Contactos
 .contactanos-contenedor {
-    width: 100%;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  @include display-flex(row, space-evenly, flex-start);
+  .contactanos-c-nos {
+    margin: 2rem 0;
+    width: 45rem;
     height: auto;
-    flex-wrap: wrap;
-    @include display-flex(row, space-evenly, flex-start);
-        .contactanos-c-nos {
-            margin: 2rem 0;
-            width: 45rem;
-            height: auto;
-                .contactanos-c-nos-logo-y-h2 {
-                    width: 100%;
-                    height: auto;
-                    @include display-flex(row, flex-start, none);
-                        img {
-                            width: 8rem;
-                            height: auto;
-                            margin-left: -2rem;
-                        }
-                        h2 {
-                            text-transform: capitalize;
-                            margin: auto 0;
-                        }
-                }
-                .contactanos-c-textos {
-                    width: 100%;
-                    height: auto;
-                    @include display-flex(column, flex-start, flex-start);
-                        h2 {
-                            text-transform: none;
-                            font-size: 1.7rem;
-                        }
-                        p {
-                            font-family: $font-family-secundario;
-                            font-size: 1.5rem;
-                            font-weight: lighter;
-                            line-height: 1.4;
-                        }
-                }
-                .contactos-c-info-icons {
-                    @include display-flex(column, none, none);
-                    margin: 1rem 0;
-                        a {
-                            @include etiqueta-a;
-                            color: black;
-                            i {
-                                color: $background-principal;
-                                font-size: 1.4rem;
-                                
-                            }
-                            span {
-                                margin-left: 1rem;
-                                font-family: $font-family-secundario;
-                                font-size: 1.3rem;
-                                line-height: 3rem;
-                            }
-                        }
-                        span:hover,
-                        a:hover {
-                            color: $background-principal
-                    
-                        }
-                }
-                .icons-redes {
-                    @include display-flex(row, flex-start, center);
-                    @include iconos-redes(#000);
-                }
+    .contactanos-c-nos-logo-y-h2 {
+      width: 100%;
+      height: auto;
+      @include display-flex(row, flex-start, none);
+      img {
+        width: 8rem;
+        height: auto;
+        margin-left: -2rem;
+      }
+      h2 {
+        text-transform: capitalize;
+        margin: auto 0;
+      }
+    }
+    .contactanos-c-textos {
+      width: 100%;
+      height: auto;
+      @include display-flex(column, flex-start, flex-start);
+      h2 {
+        text-transform: none;
+        font-size: 1.7rem;
+      }
+      p {
+        font-family: $font-family-secundario;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        line-height: 1.4;
+      }
+    }
+    .contactos-c-info-icons {
+      @include display-flex(column, none, none);
+      margin: 1rem 0;
+      a {
+        @include etiqueta-a;
+        color: black;
+        i {
+          color: $background-principal;
+          font-size: 1.4rem;
         }
-
-
+        span {
+          margin-left: 1rem;
+          font-family: $font-family-secundario;
+          font-size: 1.3rem;
+          line-height: 3rem;
+        }
+      }
+      span:hover,
+      a:hover {
+        color: $background-principal;
+      }
+    }
+    .icons-redes {
+      @include display-flex(row, flex-start, center);
+      @include iconos-redes(#000);
+    }
+  }
 }
 iframe {
-    width: 100%;
-    height: 40rem;
+  width: 100%;
+  height: 40rem;
 }

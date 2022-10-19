@@ -1,87 +1,90 @@
 .carrusel-propio div img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    max-height: 80vh;
-    min-height: 60vh;
-} 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-height: 80vh;
+  min-height: 45vh;
+}
 // carrusel plantilla item propio | opiniones index
 .box-opiniones {
-    width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: $background-principal;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  h2 {
+    @include heading-tag-h2;
+  }
+  h3 {
+    @include heading-tag-h3;
+    font-size: 1.5rem;
+    color: $background-secundario;
+  }
+  .bo-caja {
+    width: 60%;
     height: auto;
-    background-color: $background-principal;
-    padding-top: 1rem;
-    margin-top: 3rem;
-        h2 {
-            @include heading-tag-h2;
+
+    .bo-contenedor-x3 {
+      width: 70%;
+      height: 35rem;
+      margin: 3rem auto;
+      .bo-perfil {
+        width: 100%;
+        text-align: center;
+        img {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
         }
-        h3 {            
-            @include heading-tag-h3;
-            font-size: 1.5rem;
-            color: $background-secundario;            
+      }
+      .bo-cx3-text {
+        p {
+          font-family: $font-family-principal;
+          font-size: 1.4rem;
+          line-height: 1.5;
+          margin-top: 2rem;
         }
-        .bo-caja {
-            width: 60%;
-            height: auto;
-            
-                .bo-contenedor-x3 {
-                    width: 70%;
-                    height: 35rem;
-                    margin: 3rem auto;
-                        .bo-perfil {
-                            width: 100%;
-                            text-align: center;
-                                img {
-                                    width: 6rem;
-                                    height: 6rem;
-                                    border-radius: 50%;
-                                }
-                        }
-                        .bo-cx3-text {
-                            margin: 0 2rem;
-                                p {
-                                    font-family: $font-family-principal;
-                                    font-size: 1.4rem;
-                                    line-height: 1.5;   
-                                    margin-top: 2rem;                                 
-                                }
-                                h4 {                                    
-                                    margin-top: 0.5rem;
-                                    font-weight: 600;
-                                }
-                                h5 {
-                                    font-size: 1rem;
-                                    color: $background-secundario;
-                                    margin: 0rem;
-                                    
-                                }
-                        }
-                        .bo-cx3-img-txt {
-                            width: 100%;
-                            position: relative;
-                                p:first-of-type{
-                                    font-family: $font-family-principal;
-                                    font-size: 1.5rem;
-                                    font-weight: 600;
-                                }
-                                p:last-of-type {                                    
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 0;
-                                    right: 0;
-                                    font-family: $font-family-principal;
-                                    font-size: 1.5rem;
-                                    font-weight: 600;
-                                    transform: rotate(3.5deg);
-                                    text-align: center;
-                                }
-                                img {
-                                    width: 23rem;
-                                    height: 30rem;
-                                    border: 0.9rem solid $background-default;
-                                    transform: rotate(4deg);
-                                }
-                        }
-                }
+        h4 {
+          margin-top: 0.5rem;
+          font-weight: 600;
         }
+        h5 {
+          font-size: 1rem;
+          color: $background-secundario;
+          margin: 0rem;
         }
+      }
+      .bo-cx3-img-txt {
+        width: 100%;
+        position: relative;
+        p:first-of-type {
+          font-family: $font-family-principal;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        p:last-of-type {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-family: $font-family-principal;
+          font-size: 1.5rem;
+          font-weight: 500;
+          transform: rotate(3.5deg);
+          color: $background-principal;
+          background-color: rgba(0, 0, 0, 0.518);
+          text-align: center;
+          width: 20rem;
+          padding-left: 1rem;
+        }
+        img {
+          width: 23rem;
+          height: 30rem;
+          border: 0.9rem solid $background-default;
+          transform: rotate(4deg);
+        }
+      }
+    }
+  }
+}

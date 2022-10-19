@@ -1,56 +1,57 @@
 .contactanos-c-form {
-    margin: 2rem 0;
-    width: 45rem;
+  margin: 2rem 0;
+  width: 45rem;
+  height: auto;
+  padding: 1rem;
+  form {
+    width: 100%;
     height: auto;
-    padding: 1rem;
-        form {
-            width: 100%;
-            height: auto;
-                div {
-                    @include display-flex(column, none, none);
-                    margin: 1.5rem 0;
-                    width: 100%;
-                    label {
-                        color: #000000;
-                        font-family: $font-family-principal;
-                        font-size: 1.3rem;
-                        font-weight: 600;
-                    }
-                    input, select {
-                        font-family: $font-family-secundario;
-                        font-size: 1.3rem;
-                        width: auto;
-                        padding-left: 0.5rem;
-                        height: 3.3rem;
-                    }
-                    textarea {
-                        font-family: $font-family-secundario;
-                        font-size: 1.3rem;
-                        width: auto; 
-                        height: 15rem;
-                        resize: none;
-                    }
-                }
-                .box-checkbox {
-                    @include display-flex(row, none, none);
-                        input {
-                            width: auto;
-                            height: auto;
-                            margin-right: 0.7rem;
-                        }
-                }
-                #submit {
-                    margin: 2rem 0;
-                    padding: 0.5rem 1.5rem;
-                    background-color: #000000;
-                    color: $background-principal;
-                    font-family: $font-family-principal;
-                    font-size: 1.4rem;
-                }
-                #submit:hover {
-                    font-weight: 600;
-                    transform: scale(1.01, 1.01);
-                    transition-duration: 1s;
-                }
-        }
+    div {
+      @include display-flex(column, none, none);
+      margin: 1.5rem 0;
+      width: 100%;
+      label {
+        color: #000000;
+        font-family: $font-family-principal;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+      input,
+      select {
+        font-family: $font-family-secundario;
+        font-size: 1.3rem;
+        width: auto;
+        padding-left: 0.5rem;
+        height: 3.3rem;
+      }
+      textarea {
+        font-family: $font-family-secundario;
+        font-size: 1.3rem;
+        width: auto;
+        height: 15rem;
+        resize: none;
+      }
+    }
+    .box-checkbox {
+      @include display-flex(row, none, none);
+      input {
+        width: auto;
+        height: auto;
+        margin-right: 0.7rem;
+      }
+    }
+    #submit {
+      margin: 2rem 0;
+      padding: 0.5rem 1.5rem;
+      background-color: #000000;
+      color: $background-principal;
+      font-family: $font-family-principal;
+      font-size: 1.4rem;
+    }
+    #submit:hover {
+      font-weight: 600;
+      transform: scale(1.01, 1.01);
+      transition-duration: 1s;
+    }
+  }
 }

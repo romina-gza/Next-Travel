@@ -1,114 +1,113 @@
 footer {
-    width: 100%;
-    background-color: $background-secundario;
-    @include display-flex(column, center, center);
+  width: 100%;
+  background-color: $background-secundario;
+  @include display-flex(column, center, center);
 
-        #form-box{
-            width: 80%;
-            height: auto;
-            border-bottom: solid 0.1rem #616161;
-            @include display-flex(row, center, none);
-            flex-wrap: wrap;
-                form {
-                    padding: 2rem;
-        
-                    h2{
-                        font-family: $font-family-principal;
-                        color: $background-principal;
-                        font-size: 2.4rem;
-                        margin: 0.5rem 0;
-                        text-align: center;
-                    }
-                    h3 {
-                        @extend h2;
-                        color: $background-default;
-                        text-align: center;
-                        margin: 1.5rem 0;
-                        font-size: 1.8rem;
-                    }
-                    input:not(:last-of-type){
-                        margin: 1rem 0.5rem;
-                        padding-left: 0.7rem; 
-                        width: 25rem;
-                        height: 3.5rem;
-                        border: none;
-                        font-family: $font-family-secundario;
-                        font-size: 1.2rem;
-                    }
-                    #email {
-                        width: 25rem;
-                    }
-                    #submit {
-                        width: 15rem;
-                        height: 3.5rem;
-                        background-color: $background-principal;
-                        font-weight: 600;
-                        text-align: center;
-                        margin: 1rem 0.5rem;
-                        padding: 0;
-                        border: none;
-                        font-family: $font-family-secundario;
-                        font-size: 1.2rem;
-                        text-transform: uppercase;
-                    }
-                    #submit:hover {
-                        transform: scale(1.03, 1.03);
-                        transition: all 1s;
-                    }
-                }
-        }
-        #contenedor-f2 {
-            margin: 2rem 0;
-            width: 80%;
-            height: auto;
-            @include display-flex(row, space-around, center);
-            flex-wrap: wrap;
-                .box-nav-foot {
-                    width: auto;
-                }
-                .bnf-first {
-                    width: auto;
-                        img {
-                        width: 25rem;
-                        height: auto;
-                        }
-                        .icons-redes{
-                            @include display-flex(row, center, center);
-                            @include iconos-redes($background-default);
-                        }
-                }
-                h3 {
-                    font-family: $font-family-secundario;
-                    color: $background-principal;
-                    font-size: 1.6rem;
-                    font-weight: 600;
-                }
-                a {
-                    font-family: $font-family-principal;
-                    color: $background-default;
-                    font-size: 1.3rem;
-                    text-align: center;
-                    line-height: 3rem;
-                    text-decoration: none;
-                    display: block;
-                    text-align: left;
-                }
-                i {
-                    color: $background-principal;
-                }
-                span:hover,
-                a:hover {
-                    color: $background-principal
-                    
-                }
-        }
-        .copyright{
-            width: 100%;
-            p {
-                font-family: $font-family-secundario;
-                font-size: 1.3rem;
-                text-align: center;
-                color: $background-default;
-            }
-        }
+  #form-box {
+    width: 80%;
+    height: auto;
+    border-bottom: solid 0.1rem #616161;
+    @include display-flex(row, center, none);
+    flex-wrap: wrap;
+    form {
+      padding: 2rem;
+
+      h2 {
+        font-family: $font-family-principal;
+        color: $background-principal;
+        font-size: 2.4rem;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+      h3 {
+        @extend h2;
+        color: $background-default;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: 1.8rem;
+      }
+      input:not(:last-of-type) {
+        margin: 1rem 0.5rem;
+        padding-left: 0.7rem;
+        width: 25rem;
+        height: 3.5rem;
+        border: none;
+        font-family: $font-family-secundario;
+        font-size: 1.2rem;
+      }
+      #email {
+        width: 25rem;
+      }
+      #submit {
+        width: 15rem;
+        height: 3.5rem;
+        background-color: $background-principal;
+        font-weight: 600;
+        text-align: center;
+        margin: 1rem 0.5rem;
+        padding: 0;
+        border: none;
+        font-family: $font-family-secundario;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+      #submit:hover {
+        transform: scale(1.03, 1.03);
+        transition: all 1s;
+      }
+    }
+  }
+  #contenedor-f2 {
+    margin: 2rem 0;
+    width: 80%;
+    height: auto;
+    @include display-flex(row, space-around, center);
+    flex-wrap: wrap;
+    .box-nav-foot {
+      width: auto;
+    }
+    .bnf-first {
+      width: auto;
+      img {
+        width: 25rem;
+        height: auto;
+      }
+      .icons-redes {
+        @include display-flex(row, center, center);
+        @include iconos-redes($background-default);
+      }
+    }
+    h3 {
+      font-family: $font-family-secundario;
+      color: $background-principal;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    a {
+      font-family: $font-family-principal;
+      color: $background-default;
+      font-size: 1.3rem;
+      text-align: center;
+      line-height: 3rem;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    i {
+      color: $background-principal;
+    }
+    span:hover,
+    a:hover {
+      color: $background-principal;
+    }
+  }
+  .copyright {
+    width: 100%;
+    p {
+      font-family: $font-family-secundario;
+      font-size: 1.3rem;
+      text-align: center;
+      color: $background-default;
+    }
+  }
 }

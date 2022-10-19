@@ -1,9 +1,9 @@
 section {
-    h2 {
-        @include heading-tag-h2;
-    }
-        @include fondos-principales;
-            h1 {
-                @include heading-tag-h1;     
-                }
+  h2 {
+    @include heading-tag-h2;
+  }
+  @include fondos-principales;
+  h1 {
+    @include heading-tag-h1;
+  }
 }
