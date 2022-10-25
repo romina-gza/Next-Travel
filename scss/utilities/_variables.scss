@@ -1,28 +1,39 @@
+// Colores
 $background-principal: #ffcc50;
 $background-secundario: #424242;
 $background-terciario: #2b2a2ad9;
 $background-default: #fff;
+
+// Tipografias
 $font-family-principal: "Roboto", sans-serif;
 $font-family-secundario: "Montserrat", sans-serif;
 
+// Pag. Nosotros - Fondo de imagen con gradiente
 $fondo-nosotros: linear-gradient(rgba(51, 55, 60, 0.484), rgba(15, 15, 15, 0.5)),
   url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 
+// Pag. Conoce Argentina - Fondo de imagen con gradiente
 $fondo-conoce-argentina: linear-gradient(
     rgba(51, 55, 60, 0.484),
     rgba(15, 15, 15, 0.5)
   ),
   url("https://cdn.pixabay.com/photo/2016/11/29/09/49/woman-1868817_960_720.jpg");
+
+// Pag. Contactos - Fondo de imagen con gradiente
 $fondo-contactanos: linear-gradient(
     rgba(51, 55, 60, 0.484),
     rgba(15, 15, 15, 0.5)
   ),
   url("https://images.unsplash.com/photo-1601933513556-7926c45d1c49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+// Pag. Pack Friends - Fondo de imagen con gradiente
 $fondo-pack-friends: linear-gradient(
     rgba(51, 55, 60, 0.484),
     rgba(15, 15, 15, 0.5)
   ),
   url("https://images.unsplash.com/photo-1495837174058-628aafc7d610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+// Pag. Tour en Autobús - Fondo de imagen con gradiente
 $fondo-tours-en-autobus: linear-gradient(
     rgba(51, 55, 60, 0.484),
     rgba(15, 15, 15, 0.5)

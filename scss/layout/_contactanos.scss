@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   @include display-flex(row, space-evenly, flex-start);
   .contactanos-c-nos {
-    margin: 2rem 0;
+    margin: 1rem 0;
+    padding: 2rem 1.5rem;
     width: 45rem;
     height: auto;
     .contactanos-c-nos-logo-y-h2 {
@@ -33,7 +34,7 @@
       p {
         font-family: $font-family-secundario;
         font-size: 1.5rem;
-        font-weight: lighter;
+        font-weight: 400;
         line-height: 1.4;
       }
     }
@@ -43,6 +44,7 @@
       a {
         @include etiqueta-a;
         color: black;
+        font-weight: 400;
         i {
           color: $background-principal;
           font-size: 1.4rem;
@@ -54,8 +56,20 @@
           line-height: 3rem;
         }
       }
+      ul {
+        margin-bottom: 1rem;
+        li {
+          list-style: none;
+          padding-left: 3rem;
+          font-size: 1.3rem;
+          line-height: 1.8;
+          font-family: $font-family-secundario;
+          font-weight: 400;
+        }
+      }
       span:hover,
-      a:hover {
+      a:hover,
+      li:hover {
         color: $background-principal;
       }
     }

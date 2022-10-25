@@ -1,10 +1,25 @@
 @media (min-width: 577px) and (max-width: 992px) {
   //Inicio
-  .ul-propia:last-of-type {
-    display: none;
-  }
-  .btn-movil {
-    display: none;
+  header {
+    #info-box {
+      display: none;
+    }
+    nav {
+      .navbar-toggler {
+        order: 1;
+      }
+      .navbar-brand {
+        order: 2;
+      }
+      .ul-propia:last-of-type {
+        display: none;
+      }
+      .btn-movil {
+        order: 3;
+        background-color: rgb(21, 153, 21);
+        color: white;
+      }
+    }
   }
   // Lo mas visitado y escapada de fin de semana Pagina Inicio
   section {
@@ -30,6 +45,7 @@
       grid-column: 1 / 13;
       grid-row: 2 / 3;
       width: 100%;
+      text-align: center;
     }
     .bo-cx3-img-txt {
       display: none;
@@ -37,8 +53,46 @@
       grid-row: 3 / 4;
     }
   }
+  //letras de imagenes visibles - Index
+  section .first-box .fb-contenedor div figure .container {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    h3 {
+      margin-top: 7rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
   aside {
     display: none;
+  }
+  footer {
+    #form-box form {
+      @include display-flex(column, none, center);
+    }
+    #contenedor-f2 {
+      margin: 2rem 0;
+      padding: 0;
+      width: 80%;
+      height: auto;
+      @include display-flex(column, center, center);
+      flex-wrap: wrap;
+      h3 {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+      }
+    }
+    #copyright {
+      text-align: center;
+      width: 80%;
+      margin: 0;
+    }
   }
   // Pagina Nosotros
   #nosotros {

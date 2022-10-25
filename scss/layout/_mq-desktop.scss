@@ -1,7 +1,18 @@
 @media (min-width: 992px) {
-  // esconde boton de la barra nav
-  .btn-movil {
-    display: none;
+  // esconde boton de la barra nav Inicio
+  header {
+    #info-box {
+      @include display-flex(row, space-between, none);
+    }
+    nav {
+      .btn-movil {
+        display: none;
+      }
+    }
+  }
+  //orden en navbar
+  .navbar-expand-lg .navbar-collapse {
+    order: 2;
   }
 
   // carrusel opiniones
@@ -34,7 +45,25 @@
         min-width: 97%;
         flex-wrap: nowrap;
       }
+      //VER DE MOVER ESTO A MQ DESKTOP
+      div:hover > figure .container {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      div:hover > figure .container h3 {
+        margin-top: 7rem;
+        margin-bottom: 1.5rem;
+      }
     }
+  }
+  //pagina tour en autobus
+  .tea-first-box div {
+    @include display-flex(row, center, start);
+    flex-wrap: nowrap;
   }
   //Pagina Nosotros
   #nosotros {
@@ -51,7 +80,7 @@
     #n-eligenos {
       grid-column: 1 / 5;
       grid-row: 2 / 3;
-      @include display-flex(row, none, center);
+      @include display-flex(row, center, center);
     }
     #n-historia {
       grid-column: 1 / 3;

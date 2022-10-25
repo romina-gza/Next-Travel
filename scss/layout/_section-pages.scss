@@ -1,10 +1,12 @@
 .tea-first-box {
-  width: 100%;
+  width: 97%;
   height: auto;
+  margin: 0 auto;
   div {
     @include display-flex(row, center, start);
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     height: auto;
     div {
       width: 50rem;
@@ -15,24 +17,29 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+    div {
+      height: auto;
+      margin: 1.5rem;
       p {
-        @include parrafo;
+        text-align: start;
+        font-family: $font-family-secundario;
         font-size: 1.6rem;
-        font-weight: normal;
+        font-weight: 400;
       }
     }
   }
 }
+
 .ca-box-text-p,
 .pf-fb-box-p {
-  @extend .ca-box-text-p;
   width: 80%;
   height: auto;
   margin: 1.5rem auto;
   p {
-    @include parrafo;
     text-align: center;
-    font-weight: normal;
+    font-family: $font-family-secundario;
     font-size: 1.6rem;
+    font-weight: 400;
   }
 }

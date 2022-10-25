@@ -1,31 +1,51 @@
 @media (min-width: 320px) and (max-width: 576px) {
-  // Iinicio
-  .ul-propia:last-of-type {
-    display: none;
-  }
-  .btn-movil {
-    background-color: rgb(21, 153, 21);
-    color: white;
+  // barra nav de Inicio
+  header {
+    #info-box {
+      display: none;
+    }
+    nav {
+      min-height: 7rem;
+      .navbar-toggler {
+        order: 1;
+      }
+      .navbar-brand {
+        display: none;
+        order: 2;
+      }
+      .ul-propia:last-of-type {
+        display: none;
+      }
+      .btn-movil {
+        order: 3;
+      }
+    }
   }
   aside {
     display: none;
   }
   footer {
-    #copyright {
-      text-align: center;
-      width: 80%;
-      margin: 0;
+    #form-box form {
+      @include display-flex(column, none, center);
     }
     #contenedor-f2 {
       margin: 2rem 0;
       padding: 0;
       width: 80%;
       height: auto;
-      display: flex;
-      flex-direction: column;
+      @include display-flex(column, center, center);
       flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: center;
+      h3 {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+      }
+    }
+    #copyright {
+      text-align: center;
+      width: 80%;
+      margin: 0;
     }
   }
   // carrusel opiniones de Inicio
@@ -42,6 +62,7 @@
       grid-column: 1 / 13;
       grid-row: 2 / 3;
       width: 100%;
+      text-align: center;
     }
     .bo-cx3-img-txt {
       display: none;
@@ -49,9 +70,22 @@
       grid-row: 3 / 4;
     }
   }
+  section .first-box .fb-contenedor div figure .container {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    h3 {
+      margin-top: 7rem;
+      margin-bottom: 1.5rem;
+    }
+  }
   //Nosotros
   #nosotros {
     #n-eligenos {
+      @include display-flex(column, none, center);
       grid-column: 1 / 5;
       grid-row: 2 / 3;
     }

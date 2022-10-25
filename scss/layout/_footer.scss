@@ -46,7 +46,9 @@ footer {
         text-align: center;
         margin: 1rem 0.5rem;
         padding: 0;
+        border-radius: 0.55rem;
         border: none;
+        box-shadow: #0000006e -3px 3px 3px;
         font-family: $font-family-secundario;
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -62,9 +64,10 @@ footer {
     width: 80%;
     height: auto;
     @include display-flex(row, space-around, center);
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     .box-nav-foot {
       width: auto;
+      margin: 2rem;
     }
     .bnf-first {
       width: auto;
@@ -87,7 +90,6 @@ footer {
       font-family: $font-family-principal;
       color: $background-default;
       font-size: 1.3rem;
-      text-align: center;
       line-height: 3rem;
       text-decoration: none;
       display: block;
@@ -102,7 +104,7 @@ footer {
     }
   }
   .copyright {
-    width: 100%;
+    width: 90%;
     p {
       font-family: $font-family-secundario;
       font-size: 1.3rem;

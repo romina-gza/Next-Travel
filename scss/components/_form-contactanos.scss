@@ -1,8 +1,8 @@
 .contactanos-c-form {
-  margin: 2rem 0;
+  margin-top: 2rem;
   width: 45rem;
   height: auto;
-  padding: 1rem;
+  padding: 0 1rem;
   form {
     width: 100%;
     height: auto;
@@ -15,6 +15,7 @@
         font-family: $font-family-principal;
         font-size: 1.3rem;
         font-weight: 600;
+        margin-top: 0.8rem;
       }
       input,
       select {
@@ -23,6 +24,7 @@
         width: auto;
         padding-left: 0.5rem;
         height: 3.3rem;
+        margin-top: 0.3rem;
       }
       textarea {
         font-family: $font-family-secundario;
@@ -30,6 +32,7 @@
         width: auto;
         height: 15rem;
         resize: none;
+        padding-left: 0.7rem;
       }
     }
     .box-checkbox {
@@ -47,11 +50,12 @@
       color: $background-principal;
       font-family: $font-family-principal;
       font-size: 1.4rem;
+      border-radius: 0.55rem;
+      border: none;
+      box-shadow: #0000006e -3px 3px 3px;
     }
     #submit:hover {
       font-weight: 600;
-      transform: scale(1.01, 1.01);
-      transition-duration: 1s;
     }
   }
 }
