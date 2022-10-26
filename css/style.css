@@ -461,10 +461,12 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: none; }
-  header nav .btn-movil {
-    display: none; }
-  .navbar-expand-lg .navbar-collapse {
+  header .navbar .container-fluid .navbar-collapse {
     order: 2; }
+    header .navbar .container-fluid .navbar-collapse .navbar-nav:first-of-type li:nth-child(2) {
+      display: none; }
+  header .navbar .container-fluid .btn-movil {
+    display: none; }
   .bo-contenedor-x3 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

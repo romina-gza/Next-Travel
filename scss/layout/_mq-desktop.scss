@@ -4,17 +4,22 @@
     #info-box {
       @include display-flex(row, space-between, none);
     }
-    nav {
-      .btn-movil {
-        display: none;
+    .navbar {
+      .container-fluid {
+        //orden de logo, enlace a paginas y boton en navbar 
+        .navbar-collapse {
+          order: 2;
+          //esconde en desktop el enlace a pagina Sobre Nosotros
+          .navbar-nav:first-of-type li:nth-child(2) {
+            display: none;
+        }
+        }
+        .btn-movil {
+          display: none;
+        }
       }
     }
   }
-  //orden en navbar
-  .navbar-expand-lg .navbar-collapse {
-    order: 2;
-  }
-
   // carrusel opiniones
   .bo-contenedor-x3 {
     @include display-grid(repeat(12, 1fr), repeat(2, 1fr) 1.5fr, none, none);
