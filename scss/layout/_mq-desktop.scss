@@ -6,13 +6,13 @@
     }
     .navbar {
       .container-fluid {
-        //orden de logo, enlace a paginas y boton en navbar 
+        //orden de logo, enlace a paginas y boton en navbar
         .navbar-collapse {
           order: 2;
           //esconde en desktop el enlace a pagina Sobre Nosotros
           .navbar-nav:first-of-type li:nth-child(2) {
             display: none;
-        }
+          }
         }
         .btn-movil {
           display: none;
